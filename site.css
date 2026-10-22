@@ -877,6 +877,8 @@ html,body{ overflow-x:clip; }
   .dock a{ pointer-events:auto; font-size:14px; line-height:20px; font-weight:400; color:var(--ink-2); padding:6px 14px; border-radius:999px; }
   .dock a:hover{ color:var(--ink); background:rgba(29,29,31,.07); }
   .dock a[aria-current="page"]{ color:var(--ink); font-weight:600; background:rgba(241,198,46,.28); }
+  /* Home is a phone-only tab: the wide-screen top bar already has the name on the left linking home */
+  .dock a.dock__home{ display:none; }
   .dock a:last-child{ margin-left:8px; color:#fff; background:var(--ink); font-weight:600; }
   .dock a:last-child:hover{ background:#000; }
   .dock a:last-child[aria-current="page"]{ box-shadow:0 0 0 2px var(--bg-2), 0 0 0 4px var(--gold); }
@@ -894,7 +896,7 @@ html,body{ overflow-x:clip; }
   .dock{
     left:0; right:0; margin-inline:auto; width:min(calc(100% - 24px), 420px);
     bottom:calc(12px + env(safe-area-inset-bottom, 0px)); height:64px; padding:6px;
-    display:grid; grid-template-columns:repeat(4, 1fr); gap:4px;
+    display:grid; grid-template-columns:repeat(5, 1fr); gap:4px;
     border-radius:26px;
     background:rgba(28,28,31,.92);
     -webkit-backdrop-filter:saturate(180%) blur(22px); backdrop-filter:saturate(180%) blur(22px);
