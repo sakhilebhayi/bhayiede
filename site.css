@@ -861,7 +861,7 @@ html,body{ overflow-x:clip; }
 @media (max-width:734px){ .map__col--build{ order:4; } .map__col--build .map__tiles{ grid-template-columns:repeat(2, minmax(0,1fr)); } }
 
 /* ---------- Navigation dock ----------
-   One <nav class="dock"> serves both layouts. On wide screens it is the right-hand end of the top bar
+   One <nav class="dock"> serves both layouts. On wide screens it is the top bar, links centred, no name
    (text links, the current page in a gold pill, Contact as the one filled button). On phones it becomes a floating
    glass tab bar fixed to the bottom edge, within thumb reach, with an icon over each label. */
 .dock{ position:fixed; z-index:55; display:flex; }
@@ -871,9 +871,10 @@ html,body{ overflow-x:clip; }
 @media (min-width:735px){
   .dock{
     top:0; left:0; right:0; height:var(--nav); pointer-events:none;
-    justify-content:flex-end; align-items:center; gap:4px;
-    padding-right:max(48px, calc((100% - 1260px) / 2));
+    justify-content:center; align-items:center; gap:4px;
   }
+  /* The name is not shown in the wide-screen bar: the links are centred in it on their own */
+  .nav__name{ display:none; }
   .dock a{ pointer-events:auto; font-size:14px; line-height:20px; font-weight:400; color:var(--ink-2); padding:6px 14px; border-radius:999px; }
   .dock a:hover{ color:var(--ink); background:rgba(29,29,31,.07); }
   .dock a[aria-current="page"]{ color:var(--ink); font-weight:600; background:rgba(241,198,46,.28); }
@@ -889,7 +890,6 @@ html,body{ overflow-x:clip; }
   .nav.on-dark ~ .dock a:last-child:hover{ background:#fff; }
   .nav.on-dark ~ .dock a:last-child[aria-current="page"]{ box-shadow:0 0 0 2px #0b0b0c, 0 0 0 4px var(--gold); }
 }
-@media (min-width:1069px){ .dock{ padding-right:max(64px, calc((100% - 1260px) / 2)); } }
 
 @media (max-width:734px){
   html{ scroll-padding-bottom:104px; }
