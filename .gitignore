@@ -22,3 +22,19 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Design exploration and build tooling: never ship
+design-options/
+design-research/
+.final-shots/
+.workflow/
+
+# Owner notes, product context and design system: kept local, never on the public repo
+.private/
+PRODUCT.md
+DESIGN.md
+.impeccable/
+
+# Local browser tooling and deploy bundles
+.playwright-cli/
+deploy/

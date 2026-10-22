@@ -1,0 +1,54 @@
+# sakhilebhayi.com (cPanel / LiteSpeed, Apache-compatible rules)
+# Deploy note: if cPanel's "Setup Node.js App" created an app on this domain, remove that app
+# first; its Passenger lines in this file are what answer every address with 200.
+
+Options -Indexes
+DirectoryIndex index.html
+
+RewriteEngine On
+
+# One canonical origin: https://sakhilebhayi.com (301 from http:// and from www.)
+RewriteCond %{HTTPS} !=on [OR]
+RewriteCond %{HTTP_HOST} ^www\. [NC]
+RewriteRule ^ https://sakhilebhayi.com%{REQUEST_URI} [L,R=301,NE]
+
+# /index.html -> /, and /work/index.html -> /work/ (each page is a folder with an index.html)
+RewriteCond %{THE_REQUEST} \s/(([^\s?]*/)?)index\.html[\s?] [NC]
+RewriteRule ^ /%1 [L,R=301,NE]
+
+# /work -> /work/ (one 301 on the canonical origin, instead of mod_dir's)
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^(.+[^/])$ /$1/ [L,R=301]
+
+# Build and design folders are never served, even if uploaded by mistake.
+RewriteRule ^(design-options|design-research|\.final-shots|\.workflow|\.impeccable|\.private|\.git)(/|$) - [R=404,L]
+RewriteRule ^(PRODUCT|README|DESIGN)\.md$ - [R=404,L]
+
+# Missing addresses answer 404, not the home page.
+ErrorDocument 404 /404.html
+
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  <FilesMatch "\.(avif|webp|png|ico)$">
+    Header set Cache-Control "public, max-age=2592000"
+  </FilesMatch>
+  # Photographs and re-exported logos carry their size in the filename and are never edited in place:
+  # replace one by giving it a new name, then they can be cached for a year.
+  <FilesMatch "^(photo-.+|signature-[0-9]+|.+-[0-9]+)\.(avif|webp)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+  <FilesMatch "\.(html|css|js|xml|txt)$">
+    Header set Cache-Control "no-cache"
+  </FilesMatch>
+</IfModule>
+
+# Text is compressed on the wire; the performance budget in DESIGN.md is measured compressed.
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/javascript application/javascript application/xml text/xml text/plain image/svg+xml
+</IfModule>
+
+<IfModule mod_mime.c>
+  AddType image/avif .avif
+  AddType image/webp .webp
+</IfModule>
