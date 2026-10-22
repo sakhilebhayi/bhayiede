@@ -1,1602 +1,681 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en-ZA" class="no-js">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sakhile Bhayi — Intelligence Architect</title>
-  <meta name="description" content="Sakhile Bhayi is an Intelligence Architect based in South Africa, building fleet management platforms, mining analytics systems, and AI-driven operational tools for the mining industry."/>
-  <meta name="keywords" content="Sakhile Bhayi, mining technology, Fleet Management Systems, fleet intelligence, mining analytics, industrial data platforms, BluPin, InfoDot, South Africa"/>
-  <meta name="author" content="Sakhile Bhayi"/>
-  <meta name="robots" content="index, follow"/>
-  <link rel="canonical" href="https://sakhilebhayi.com"/>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<script>document.documentElement.classList.replace('no-js','js');if(!matchMedia('(prefers-reduced-motion: reduce)').matches){document.documentElement.classList.add('has-motion');setTimeout(function(){if(!window.__motionReady)document.documentElement.classList.remove('has-motion')},4000)}</script>
+<title>Sakhile Bhayi · Mine control systems engineer turned founder</title>
+<meta name="description" content="Sakhile Bhayi is a mine control systems engineer and full stack developer turned founder of the Dot.Eco-system, South Africa. I build systems that connect a growing business's scattered information into one picture its people can trust.">
+<link rel="canonical" href="https://sakhilebhayi.com/">
+<meta name="author" content="Sakhile Bhayi">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#f5f5f7">
+<meta name="format-detection" content="telephone=no">
+<meta property="og:type" content="profile">
+<meta property="og:site_name" content="Sakhile Bhayi">
+<meta property="og:locale" content="en_ZA">
+<meta property="og:url" content="https://sakhilebhayi.com/">
+<meta property="og:title" content="From fragmented information to connected intelligence">
+<meta property="og:description" content="Sakhile Bhayi is a mine control systems engineer and full stack developer turned founder of the Dot.Eco-system, South Africa. I build systems that connect a growing business's scattered information into one picture its people can trust.">
+<meta property="og:image" content="https://sakhilebhayi.com/og-image.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="From fragmented information to connected intelligence. Sakhile Bhayi, founder of the Dot.Eco-system.">
+<meta property="profile:first_name" content="Sakhile">
+<meta property="profile:last_name" content="Bhayi">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="From fragmented information to connected intelligence">
+<meta name="twitter:description" content="Sakhile Bhayi is a mine control systems engineer and full stack developer turned founder of the Dot.Eco-system, South Africa. I build systems that connect a growing business's scattered information into one picture its people can trust.">
+<meta name="twitter:image" content="https://sakhilebhayi.com/og-image.png">
+<meta name="twitter:image:alt" content="From fragmented information to connected intelligence. Sakhile Bhayi, founder of the Dot.Eco-system.">
+<link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="icon" href="/apple-touch-icon.png" type="image/png" sizes="180x180">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600&amp;display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600&amp;display=swap"></noscript>
+<link rel="preload" as="image" type="image/avif" imagesrcset="/assets/photo-hero-1440.avif 1440w, /assets/photo-hero-1920.avif 1920w" imagesizes="100vw" media="(min-width: 735px)" fetchpriority="high">
+<link rel="preload" as="image" type="image/avif" imagesrcset="/assets/photo-hero-800.avif 800w" imagesizes="100vw" media="(max-width: 734px)" fetchpriority="high">
+<link rel="stylesheet" href="/site.css">
+<script src="/site.js" defer></script>
+<script src="/assets/js/gsap.min.js" defer></script>
+<script src="/assets/js/ScrollTrigger.min.js" defer></script>
+<script src="/assets/js/motion.js" defer></script>
 
-  <!-- Open Graph -->
-  <meta property="og:type" content="profile"/>
-  <meta property="og:title" content="Sakhile Bhayi — Intelligence Architect"/>
-  <meta property="og:description" content="Sakhile Bhayi is an Intelligence Architect based in South Africa, building fleet management platforms, mining analytics systems, and AI-driven operational tools for the mining industry."/>
-  <meta property="og:url" content="https://sakhilebhayi.com"/>
-  <meta property="og:image" content="https://sakhilebhayi.com/logo.png"/>
-  <meta property="og:image:alt" content="Sakhile Bhayi"/>
-  <meta property="og:site_name" content="Sakhile Bhayi"/>
-  <meta property="og:locale" content="en_ZA"/>
-  <meta property="profile:first_name" content="Sakhile"/>
-  <meta property="profile:last_name" content="Bhayi"/>
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary"/>
-  <meta name="twitter:title" content="Sakhile Bhayi — Intelligence Architect"/>
-  <meta name="twitter:description" content="Sakhile Bhayi is an Intelligence Architect based in South Africa, building fleet management platforms, mining analytics systems, and AI-driven operational tools for the mining industry."/>
-  <meta name="twitter:image" content="https://sakhilebhayi.com/logo.png"/>
-
-  <link rel="icon" href="/logo.png" type="image/png"/>
-
-  <!-- Structured Data: Person -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Sakhile Bhayi",
-    "jobTitle": "Intelligence Architect",
-    "description": "Technology professional with 10+ years of experience building fleet management platforms, mining analytics systems, and AI-driven operational tools. Founder of BluPin Inc. and creator of the InfoDot ecosystem.",
-    "url": "https://sakhilebhayi.com",
-    "image": "https://sakhilebhayi.com/logo.png",
-    "email": "info@sakhilebhayi.com",
-    "telephone": "+27725553121",
-    "address": {
-      "@type": "PostalAddress",
-      "addressCountry": "ZA",
-      "addressRegion": "South Africa"
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://sakhilebhayi.com/#person",
+      "name": "Sakhile Bhayi",
+      "url": "https://sakhilebhayi.com/",
+      "image": "https://sakhilebhayi.com/logo.png",
+      "email": "mailto:info@sakhilebhayi.com",
+      "jobTitle": "Founder, Dot.Eco-system",
+      "description": "South African founder who builds systems that connect a business's scattered information into one picture its people can trust. He designed and built the Dot.Eco-system, a connected set of business platforms, with an AI-native engineering practice.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "ZA"
+      },
+      "knowsAbout": [
+        "Business intelligence",
+        "Operations systems",
+        "Data integration",
+        "Mine control systems",
+        "Fleet management systems",
+        "Business reporting",
+        "Laravel"
+      ],
+      "sameAs": [
+        "https://za.linkedin.com/in/sakhilebayi"
+      ],
+      "worksFor": [
+        {
+          "@id": "https://sakhilebhayi.com/#ecosystem"
+        }
+      ]
     },
-    "worksFor": [
-      {
-        "@type": "Organization",
-        "name": "BluPin Inc.",
-        "url": "https://blupininc.com"
+    {
+      "@type": "WebSite",
+      "@id": "https://sakhilebhayi.com/#website",
+      "url": "https://sakhilebhayi.com/",
+      "name": "Sakhile Bhayi",
+      "description": "Sakhile Bhayi is a mine control systems engineer and full stack developer turned founder of the Dot.Eco-system, South Africa. I build systems that connect a growing business's scattered information into one picture its people can trust.",
+      "inLanguage": "en-ZA",
+      "author": {
+        "@id": "https://sakhilebhayi.com/#person"
       },
-      {
-        "@type": "Organization",
-        "name": "Modular Mining"
+      "publisher": {
+        "@id": "https://sakhilebhayi.com/#person"
       }
-    ],
-    "alumniOf": [
-      {
-        "@type": "EducationalOrganization",
-        "name": "Eduvos",
-        "address": { "@type": "PostalAddress", "addressLocality": "Pretoria", "addressCountry": "ZA" }
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": "https://sakhilebhayi.com/#profilepage",
+      "url": "https://sakhilebhayi.com/",
+      "name": "Sakhile Bhayi · Mine control systems engineer turned founder",
+      "description": "Sakhile Bhayi is a mine control systems engineer and full stack developer turned founder of the Dot.Eco-system, South Africa. I build systems that connect a growing business's scattered information into one picture its people can trust.",
+      "inLanguage": "en-ZA",
+      "isPartOf": {
+        "@id": "https://sakhilebhayi.com/#website"
       },
-      {
-        "@type": "EducationalOrganization",
-        "name": "Pearsons Institute",
-        "address": { "@type": "PostalAddress", "addressCountry": "ZA" }
+      "mainEntity": {
+        "@id": "https://sakhilebhayi.com/#person"
+      },
+      "about": {
+        "@id": "https://sakhilebhayi.com/#person"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://sakhilebhayi.com/og-image.png",
+        "width": 1200,
+        "height": 630
+      },
+      "dateModified": "2026-10-22T00:00:00+02:00"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://sakhilebhayi.com/#ecosystem",
+      "name": "Dot.Eco-system",
+      "url": "https://www.infodot.co.za/",
+      "description": "The full set of InfoDot micro platforms: operations, documents, files, forms, monitoring and more.",
+      "founder": {
+        "@id": "https://sakhilebhayi.com/#person"
       }
-    ],
-    "knowsAbout": [
-      "Fleet Management Systems",
-      "Mining Technology",
-      "Mining Analytics",
-      "Artificial Intelligence",
-      "PHP",
-      "C#",
-      "JavaScript",
-      "VueJS",
-      "AWS",
-      "Power BI",
-      "LLMs",
-      "Claude API",
-      "Minecare",
-      "Dispatch"
-    ],
-    "sameAs": [
-      "https://za.linkedin.com/in/sakhilebayi",
-      "https://github.com/sakhileb",
-      "https://orcid.org/0009-0004-7055-0427",
-      "https://infodot.co.za",
-      "https://blupininc.com"
-    ]
-  }
-  </script>
-
-  <!-- Structured Data: WebSite -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Sakhile Bhayi",
-    "url": "https://sakhilebhayi.com",
-    "description": "Personal website of Sakhile Bhayi — Intelligence Architect specialising in mining technology, fleet management platforms, and AI-driven operational systems."
-  }
-  </script>
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Archivo:wght@300;400;500;600&display=swap" rel="stylesheet"/>
-  <style>
-    /* ── RESET ─────────────────────────────────────────────── */
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    /* ── TOKENS ────────────────────────────────────────────── */
-    :root {
-      --bg:         oklch(9% 0.012 260);
-      --bg2:        oklch(13% 0.015 260);
-      --surface:    oklch(18% 0.019 260);
-      --surface2:   oklch(25% 0.022 260);
-      --rule:       oklch(22% 0.016 260);
-      --rule2:      oklch(33% 0.019 260);
-      --text:       oklch(96% 0.004 260);
-      --text2:      oklch(73% 0.008 260);
-      --text3:      oklch(50% 0.008 260);
-      --amber:      oklch(68% 0.22 272);
-      --amber-sub:  oklch(68% 0.22 272 / 0.10);
-      --font-d:     'Barlow Condensed', sans-serif;
-      --font-b:     'Archivo', sans-serif;
-      --sidebar:    248px;
-      --max:        1100px;
-    }
-
-    /* ── BASE ──────────────────────────────────────────────── */
-    html { scroll-behavior: smooth; }
-    body {
-      font-family: var(--font-b);
-      font-size: 1rem;
-      line-height: 1.6;
-      color: var(--text);
-      background: var(--bg);
-      -webkit-font-smoothing: antialiased;
-    }
-    a { color: inherit; text-decoration: none; }
-    img { display: block; max-width: 100%; }
-    section { scroll-margin-top: 56px; }
-    @media (min-width: 1280px) { section { scroll-margin-top: 0; } }
-
-    /* ── TOPBAR ────────────────────────────────────────────── */
-    .topbar {
-      display: flex;
-      position: fixed;
-      top: 0; left: 0; right: 0;
-      height: 56px;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0 24px;
-      background: var(--bg);
-      border-bottom: 1px solid var(--rule);
-      z-index: 100;
-    }
-    @media (min-width: 1280px) { .topbar { display: none; } }
-    .topbar-name {
-      font-family: var(--font-d);
-      font-size: 1rem;
-      font-weight: 800;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      color: var(--text);
-    }
-    .menu-btn {
-      background: none; border: none; cursor: pointer;
-      color: var(--text2); padding: 8px;
-      display: flex; align-items: center;
-    }
-    .menu-btn svg { width: 22px; height: 22px; stroke: currentColor; fill: none; }
-
-    /* ── DRAWER ────────────────────────────────────────────── */
-    .drawer-overlay {
-      display: none; position: fixed; inset: 0;
-      background: oklch(0% 0 0 / 0.80); z-index: 200;
-    }
-    .drawer-overlay.open { display: block; }
-    .drawer {
-      position: fixed; top: 0; left: 0;
-      width: 272px; height: 100vh;
-      background: var(--bg);
-      border-right: 1px solid var(--rule);
-      padding: 64px 24px 32px;
-      display: flex; flex-direction: column; gap: 24px;
-      transform: translateX(-100%);
-      transition: transform 0.28s cubic-bezier(0.4,0,0.2,1);
-      z-index: 201;
-    }
-    .drawer-overlay.open .drawer { transform: translateX(0); }
-    .drawer-close {
-      position: absolute; top: 12px; right: 12px;
-      background: none; border: none; cursor: pointer;
-      color: var(--text2); padding: 8px; display: flex;
-    }
-    .drawer-close svg { width: 20px; height: 20px; stroke: currentColor; fill: none; }
-    .drawer-brand {
-      font-family: var(--font-d);
-      font-size: 1.25rem; font-weight: 800;
-      letter-spacing: 0.05em; text-transform: uppercase;
-    }
-    .drawer-nav { list-style: none; display: flex; flex-direction: column; gap: 2px; }
-    .drawer-nav a {
-      display: block; padding: 10px 12px;
-      font-size: 0.9375rem; font-weight: 500;
-      color: var(--text2); border-radius: 2px;
-      transition: color 0.15s, background 0.15s;
-    }
-    .drawer-nav a:hover { color: var(--text); background: var(--surface); }
-
-    /* ── SIDEBAR ───────────────────────────────────────────── */
-    .sidebar {
-      display: none;
-      position: fixed; top: 0; left: 0;
-      width: var(--sidebar); height: 100vh;
-      background: var(--bg);
-      border-right: 1px solid var(--rule);
-      padding: 48px 32px;
-      flex-direction: column;
-      z-index: 100;
-    }
-    @media (min-width: 1280px) { .sidebar { display: flex; } }
-    .sb-brand { margin-bottom: 56px; }
-    .sb-logo { width: 100%; height: auto; object-fit: contain; margin-bottom: 16px; opacity: 1; }
-    .sb-name {
-      font-family: var(--font-d);
-      font-size: 1.125rem; font-weight: 800;
-      letter-spacing: 0.05em; text-transform: uppercase;
-      color: var(--text); line-height: 1.2;
-    }
-    .sb-role {
-      font-size: 0.625rem; font-weight: 600;
-      letter-spacing: 0.2em; text-transform: uppercase;
-      color: var(--text3); margin-top: 6px;
-    }
-    .sb-nav { list-style: none; flex: 1; display: flex; flex-direction: column; gap: 2px; }
-    .sb-nav a {
-      display: flex; align-items: center; gap: 10px;
-      padding: 9px 10px;
-      font-size: 0.8125rem; font-weight: 500;
-      letter-spacing: 0.04em; color: var(--text3);
-      border-radius: 2px; transition: color 0.18s;
-    }
-    .sb-nav a::before {
-      content: ''; display: block;
-      width: 4px; height: 4px; border-radius: 50%;
-      background: currentColor; flex-shrink: 0;
-      opacity: 0; transition: opacity 0.18s;
-    }
-    .sb-nav a:hover { color: var(--text2); }
-    .sb-nav a.active { color: var(--amber); }
-    .sb-nav a.active::before { opacity: 1; }
-    .sb-foot {
-      margin-top: auto; padding-top: 24px;
-      border-top: 1px solid var(--rule);
-    }
-    .sb-foot p {
-      font-size: 0.6875rem; color: var(--text3);
-      line-height: 1.5; margin-bottom: 16px;
-    }
-    .sb-foot-cta {
-      font-family: var(--font-d);
-      font-size: 0.8125rem; font-weight: 700;
-      letter-spacing: 0.1em; text-transform: uppercase;
-      color: var(--amber);
-      display: inline-flex; align-items: center; gap: 8px;
-      border-bottom: 1px solid var(--amber);
-      padding-bottom: 3px;
-      transition: opacity 0.18s;
-    }
-    .sb-foot-cta:hover { opacity: 0.7; }
-
-    /* ── LAYOUT ────────────────────────────────────────────── */
-    .main { padding-top: 56px; }
-    @media (min-width: 1280px) { .main { padding-top: 0; padding-left: var(--sidebar); } }
-    .wrap {
-      max-width: var(--max);
-      margin: 0 auto;
-      padding: 96px 24px;
-    }
-    @media (min-width: 768px) { .wrap { padding: 112px 48px; } }
-
-    /* ── SECTION LABEL + HEADING ───────────────────────────── */
-    .s-label {
-      font-size: 0.6875rem; font-weight: 600;
-      letter-spacing: 0.22em; text-transform: uppercase;
-      color: var(--text3); margin-bottom: 10px;
-    }
-    .s-head {
-      font-family: var(--font-d);
-      font-size: clamp(2rem, 5vw, 3.5rem);
-      font-weight: 900; text-transform: uppercase;
-      color: var(--text); letter-spacing: -0.01em;
-      line-height: 0.97; margin-bottom: 56px;
-    }
-
-    /* ── HERO ──────────────────────────────────────────────── */
-    #home {
-      background: var(--bg);
-      min-height: 100svh;
-      display: flex; align-items: flex-end;
-    }
-    .hero-wrap {
-      width: 100%; max-width: var(--max);
-      margin: 0 auto;
-      padding: 96px 24px 80px;
-    }
-    @media (min-width: 768px) { .hero-wrap { padding: 128px 48px 96px; } }
-    .hero-eyebrow {
-      display: flex; align-items: center;
-      gap: 16px; margin-bottom: 32px;
-    }
-    .hero-eyebrow::before {
-      content: ''; display: block;
-      width: 28px; height: 1px;
-      background: var(--amber); flex-shrink: 0;
-    }
-    .hero-eyebrow span {
-      font-size: 0.6875rem; font-weight: 600;
-      letter-spacing: 0.22em; text-transform: uppercase;
-      color: var(--amber);
-    }
-    .hero-h1 {
-      font-family: var(--font-d);
-      font-size: clamp(4rem, 12vw, 10rem);
-      font-weight: 900; line-height: 0.91;
-      letter-spacing: -0.015em; text-transform: uppercase;
-      color: var(--text); margin-bottom: 56px;
-    }
-    .hero-row {
-      display: grid; grid-template-columns: 1fr;
-      gap: 40px; align-items: end;
-    }
-    @media (min-width: 768px) { .hero-row { grid-template-columns: 1fr 1fr; } }
-    .hero-bio {
-      font-size: 1.0625rem; font-weight: 300;
-      line-height: 1.68; color: var(--text2);
-      max-width: 42ch;
-    }
-    .hero-actions {
-      display: flex; flex-wrap: wrap; gap: 12px;
-    }
-    @media (min-width: 768px) { .hero-actions { justify-content: flex-end; } }
-    .btn-p {
-      font-family: var(--font-d);
-      font-size: 0.875rem; font-weight: 700;
-      letter-spacing: 0.1em; text-transform: uppercase;
-      color: var(--bg); background: var(--amber);
-      padding: 14px 32px; border-radius: 2px;
-      transition: opacity 0.18s;
-    }
-    .btn-p:hover { opacity: 0.82; }
-    .btn-g {
-      font-family: var(--font-d);
-      font-size: 0.875rem; font-weight: 700;
-      letter-spacing: 0.1em; text-transform: uppercase;
-      color: var(--text2);
-      padding: 14px 32px;
-      border: 1px solid var(--rule2);
-      border-radius: 2px;
-      transition: color 0.18s, border-color 0.18s;
-    }
-    .btn-g:hover { color: var(--text); border-color: var(--text3); }
-
-    /* ── STATS BAND ────────────────────────────────────────── */
-    .stats-band {
-      background: var(--bg2);
-      border-top: 1px solid var(--rule);
-      border-bottom: 1px solid var(--rule);
-    }
-    .stats-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      max-width: var(--max); margin: 0 auto;
-    }
-    @media (min-width: 640px) {
-      .stats-grid { grid-template-columns: repeat(4, 1fr); }
-    }
-    .stat {
-      padding: 36px 28px;
-      border-right: 1px solid var(--rule);
-    }
-    .stat:last-child { border-right: none; }
-    @media (max-width: 639px) {
-      .stat:nth-child(2n) { border-right: none; }
-      .stat:nth-child(n+3) { border-top: 1px solid var(--rule); }
-    }
-    .stat-n {
-      font-family: var(--font-d);
-      font-size: 2.75rem; font-weight: 900;
-      line-height: 1; letter-spacing: -0.02em;
-      color: var(--text); margin-bottom: 6px;
-    }
-    .stat-l {
-      font-size: 0.625rem; font-weight: 600;
-      letter-spacing: 0.2em; text-transform: uppercase;
-      color: var(--text3);
-    }
-
-    /* ── CAPABILITIES ──────────────────────────────────────── */
-    #capabilities { background: var(--bg); }
-    .cap-list { display: flex; flex-direction: column; }
-    .cap-item {
-      display: grid;
-      grid-template-columns: 44px 1fr;
-      gap: 8px 24px;
-      padding: 40px 0;
-      border-bottom: 1px solid var(--rule);
-    }
-    .cap-item:first-child { border-top: 1px solid var(--rule); }
-    @media (min-width: 1024px) {
-      .cap-item {
-        grid-template-columns: 44px 260px 1fr;
-        gap: 0 40px; align-items: center;
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://sakhilebhayi.com/#infodot",
+      "name": "InfoDot",
+      "url": "https://www.infodot.co.za/",
+      "description": "InfoDot exists to help people start, operate, manage, and grow successful businesses by combining collective human experience, practical knowledge, AI-assisted guidance, and business intelligence from across the Dot.Eco-system.",
+      "parentOrganization": {
+        "@id": "https://sakhilebhayi.com/#ecosystem"
+      },
+      "founder": {
+        "@id": "https://sakhilebhayi.com/#person"
       }
     }
-    .cap-n {
-      font-size: 0.6875rem; font-weight: 700;
-      letter-spacing: 0.12em; color: var(--amber);
-      padding-top: 6px; line-height: 1;
-    }
-    .cap-title {
-      font-family: var(--font-d);
-      font-size: 1.375rem; font-weight: 700;
-      text-transform: uppercase; letter-spacing: 0.02em;
-      color: var(--text); line-height: 1.15;
-    }
-    .cap-desc {
-      grid-column: 2;
-      font-size: 0.9375rem; font-weight: 300;
-      line-height: 1.65; color: var(--text2);
-      max-width: 58ch; margin-top: 10px;
-    }
-    @media (min-width: 1024px) {
-      .cap-desc { grid-column: 3; grid-row: 1; margin-top: 0; }
-    }
-
-    /* ── BIOGRAPHY ─────────────────────────────────────────── */
-    #about { background: var(--bg2); }
-    .timeline {
-      display: grid; grid-template-columns: 1fr;
-      margin-bottom: 80px;
-    }
-    @media (min-width: 768px) {
-      .timeline { grid-template-columns: repeat(3, 1fr); }
-    }
-    .era {
-      padding: 32px 0;
-      border-top: 1px solid var(--rule);
-    }
-    @media (min-width: 768px) {
-      .era { padding: 32px 40px 32px 0; }
-      .era:not(:first-child) { padding-left: 40px; border-left: 1px solid var(--rule); }
-    }
-    .era-yr {
-      font-size: 0.6875rem; font-weight: 600;
-      letter-spacing: 0.2em; text-transform: uppercase;
-      color: var(--amber); margin-bottom: 12px;
-    }
-    .era-t {
-      font-family: var(--font-d);
-      font-size: 1.125rem; font-weight: 700;
-      text-transform: uppercase; letter-spacing: 0.03em;
-      color: var(--text); margin-bottom: 12px;
-    }
-    .era-p {
-      font-size: 0.9rem; font-weight: 300;
-      line-height: 1.72; color: var(--text2);
-    }
-    .philosophy { padding-top: 64px; border-top: 1px solid var(--rule); }
-    .phil-quote {
-      font-family: var(--font-d);
-      font-size: clamp(1.75rem, 4.5vw, 3.25rem);
-      font-weight: 800; line-height: 1.08;
-      color: var(--text); max-width: 20ch;
-      margin-bottom: 56px;
-    }
-    .phil-grid {
-      display: grid; grid-template-columns: 1fr;
-      gap: 40px;
-    }
-    @media (min-width: 640px) {
-      .phil-grid { grid-template-columns: 1fr 1fr; }
-    }
-    .principle-n {
-      font-size: 0.6875rem; font-weight: 700;
-      letter-spacing: 0.2em; color: var(--amber);
-      margin-bottom: 10px;
-    }
-    .principle-t {
-      font-family: var(--font-d);
-      font-size: 1.0625rem; font-weight: 700;
-      text-transform: uppercase; letter-spacing: 0.03em;
-      color: var(--text); margin-bottom: 10px;
-    }
-    .principle-p {
-      font-size: 0.9rem; font-weight: 300;
-      line-height: 1.68; color: var(--text2); max-width: 42ch;
-    }
-
-    /* ── EXPERTISE ─────────────────────────────────────────── */
-    #expertise { background: var(--bg); }
-    .expertise-grid {
-      display: grid; grid-template-columns: 1fr; gap: 72px;
-    }
-    @media (min-width: 1024px) {
-      .expertise-grid { grid-template-columns: 1fr 1fr; gap: 80px; }
-    }
-    .col-label {
-      font-family: var(--font-d);
-      font-size: 0.875rem; font-weight: 700;
-      letter-spacing: 0.14em; text-transform: uppercase;
-      color: var(--text3); margin-bottom: 24px;
-    }
-    .skill-cat { margin-bottom: 28px; }
-    .skill-cat-name {
-      font-size: 0.6875rem; font-weight: 600;
-      letter-spacing: 0.18em; text-transform: uppercase;
-      color: var(--amber);
-      padding-bottom: 8px;
-      border-bottom: 1px solid var(--rule);
-      margin-bottom: 10px;
-    }
-    .skill-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
-    .skill-list li {
-      font-size: 0.9rem; color: var(--text2);
-      padding: 5px 0;
-    }
-    .job-list { list-style: none; display: flex; flex-direction: column; }
-    .job {
-      padding: 20px 0;
-      border-bottom: 1px solid var(--rule);
-    }
-    .job:first-child { border-top: 1px solid var(--rule); }
-    .job-period {
-      font-size: 0.6875rem; font-weight: 500;
-      letter-spacing: 0.14em; text-transform: uppercase;
-      color: var(--text3); margin-bottom: 5px;
-    }
-    .job-role {
-      font-family: var(--font-d);
-      font-size: 1rem; font-weight: 700;
-      text-transform: uppercase; letter-spacing: 0.02em;
-      color: var(--text); margin-bottom: 3px;
-    }
-    .job-org { font-size: 0.875rem; color: var(--text2); margin-bottom: 6px; }
-    .job-desc {
-      font-size: 0.8125rem; font-weight: 300;
-      line-height: 1.6; color: var(--text3); max-width: 52ch;
-    }
-
-    /* ── EDUCATION ─────────────────────────────────────────── */
-    #education { background: var(--bg2); }
-    .edu-grid {
-      display: grid; grid-template-columns: 1fr;
-      gap: 2px; background: var(--rule);
-      border-radius: 2px; overflow: hidden;
-    }
-    @media (min-width: 640px) {
-      .edu-grid { grid-template-columns: repeat(3, 1fr); }
-    }
-    .edu-item {
-      background: var(--surface);
-      padding: 28px 28px;
-    }
-    .edu-period {
-      font-size: 0.6875rem; font-weight: 600;
-      letter-spacing: 0.18em; text-transform: uppercase;
-      color: var(--amber); margin-bottom: 10px;
-    }
-    .edu-degree {
-      font-family: var(--font-d);
-      font-size: 1rem; font-weight: 700;
-      text-transform: uppercase; letter-spacing: 0.02em;
-      color: var(--text); line-height: 1.3; margin-bottom: 8px;
-    }
-    .edu-inst { font-size: 0.875rem; color: var(--text2); }
-
-    /* ── PORTFOLIO ─────────────────────────────────────────── */
-    #portfolio { background: var(--bg); }
-    .portfolio-split {
-      display: grid; grid-template-columns: 1fr; gap: 64px;
-    }
-    @media (min-width: 1024px) {
-      .portfolio-split { grid-template-columns: 1fr 1fr; gap: 0; }
-      .portfolio-split .port-col:first-child { padding-right: 56px; border-right: 1px solid var(--rule); }
-      .portfolio-split .port-col:last-child { padding-left: 56px; }
-    }
-    .port-col-head {
-      font-family: var(--font-d);
-      font-size: 1.5rem; font-weight: 900;
-      letter-spacing: 0.04em; text-transform: uppercase;
-      color: var(--amber); margin-bottom: 4px;
-    }
-    .port-col-sub {
-      font-size: 0.6875rem; font-weight: 600;
-      letter-spacing: 0.18em; text-transform: uppercase;
-      color: var(--text3);
-      padding-bottom: 20px;
-      border-bottom: 1px solid var(--rule);
-    }
-    .port-full {
-      margin-top: 40px; padding-top: 32px;
-      border-top: 1px solid var(--rule);
-    }
-    .project-list { list-style: none; display: flex; flex-direction: column; }
-    .project-item {
-      display: flex; flex-direction: column;
-      gap: 6px; padding: 22px 0;
-      border-bottom: 1px solid var(--rule);
-    }
-    .project-item:first-child { border-top: 1px solid var(--rule); }
-    .project-name {
-      font-family: var(--font-d);
-      font-size: 1.125rem; font-weight: 700;
-      text-transform: uppercase; letter-spacing: 0.03em;
-      color: var(--text);
-    }
-    .project-r {
-      display: flex; flex-direction: column;
-      gap: 4px;
-    }
-    .project-desc {
-      font-size: 0.875rem; color: var(--text2);
-    }
-    .project-url {
-      font-size: 0.8125rem; font-weight: 500;
-      color: var(--amber);
-      transition: opacity 0.15s;
-      align-self: flex-start;
-    }
-    .project-url:hover { opacity: 0.7; }
-    .project-icon {
-      width: 52px; height: 52px; flex-shrink: 0;
-      border-radius: 8px;
-      overflow: hidden;
-      display: flex; align-items: center; justify-content: center;
-    }
-    .project-icon img {
-      width: 100%; height: 100%; object-fit: contain;
-    }
-    .project-icon--lg {
-      width: 64px; height: 64px;
-    }
-    .project-row {
-      display: flex; align-items: flex-start; gap: 14px;
-    }
-    .project-content { flex: 1; min-width: 0; }
-    /* Full-width rows (port-full) go inline on wider screens */
-    .port-full .project-item {
-      flex-direction: column;
-    }
-    @media (min-width: 768px) {
-      .port-full .project-item {
-        flex-direction: row; align-items: baseline;
-        justify-content: space-between; gap: 40px;
-      }
-      .port-full .project-r {
-        flex-direction: row; align-items: baseline;
-        gap: 24px; flex-shrink: 0;
-      }
-      .port-full .project-url { align-self: auto; white-space: nowrap; }
-    }
-
-    /* ── PROFILE ─────────────────────────────────────────────*/
-    #profile { background: var(--bg2); }
-    .profile-grid {
-      display: grid; grid-template-columns: repeat(2, 1fr);
-      gap: 0; margin-bottom: 48px;
-    }
-    @media (min-width: 768px) {
-      .profile-grid { grid-template-columns: repeat(4, 1fr); }
-    }
-    .profile-item {
-      padding: 20px 0 20px;
-      border-top: 1px solid var(--rule);
-    }
-    .profile-item-l {
-      font-size: 0.625rem; font-weight: 600;
-      letter-spacing: 0.2em; text-transform: uppercase;
-      color: var(--text3); margin-bottom: 6px;
-    }
-    .profile-item-v {
-      font-family: var(--font-d);
-      font-size: 0.975rem; font-weight: 700;
-      color: var(--text); letter-spacing: 0.01em;
-      transition: color 0.15s;
-    }
-    .profile-item-v a:hover { color: var(--amber); }
-    .link-matrix {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 1px; background: var(--rule);
-      border-radius: 2px; overflow: hidden;
-    }
-    .link-cell {
-      background: var(--surface);
-      padding: 18px 24px;
-      display: flex; justify-content: space-between;
-      align-items: center; gap: 16px;
-      transition: background 0.15s;
-    }
-    .link-cell:hover { background: var(--surface2); }
-    .link-cell-l { font-size: 0.875rem; font-weight: 500; color: var(--text2); }
-    .link-cell-v { font-size: 0.8125rem; color: var(--text3); }
-
-    /* ── CONTACT ─────────────────────────────────────────────*/
-    #contact { background: var(--bg); }
-    .contact-grid {
-      display: grid; grid-template-columns: 1fr; gap: 72px;
-    }
-    @media (min-width: 1024px) {
-      .contact-grid { grid-template-columns: 5fr 7fr; gap: 80px; }
-    }
-    .contact-h {
-      font-family: var(--font-d);
-      font-size: clamp(3rem, 7vw, 5.5rem);
-      font-weight: 900; line-height: 0.93;
-      text-transform: uppercase; color: var(--text);
-      margin-bottom: 48px;
-    }
-    .contact-channels { display: flex; flex-direction: column; }
-    .contact-ch {
-      display: flex; align-items: baseline; gap: 20px;
-      padding: 14px 0; border-bottom: 1px solid var(--rule);
-      transition: color 0.15s;
-    }
-    .contact-ch:first-child { border-top: 1px solid var(--rule); }
-    .contact-ch:hover .contact-ch-v { color: var(--amber); }
-    .contact-ch-l {
-      font-size: 0.6875rem; font-weight: 600;
-      letter-spacing: 0.18em; text-transform: uppercase;
-      color: var(--text3); min-width: 60px; flex-shrink: 0;
-    }
-    .contact-ch-v { font-size: 0.9375rem; color: var(--text2); }
-    .contact-note {
-      margin-top: 32px; padding-top: 24px;
-      border-top: 1px solid var(--rule);
-      font-size: 0.8125rem; font-weight: 300;
-      line-height: 1.7; color: var(--text3); max-width: 36ch;
-    }
-    .form { display: flex; flex-direction: column; gap: 28px; }
-    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
-    @media (max-width: 639px) { .form-row { grid-template-columns: 1fr; } }
-    .form-g { display: flex; flex-direction: column; gap: 8px; }
-    .form-lbl {
-      font-size: 0.6875rem; font-weight: 600;
-      letter-spacing: 0.18em; text-transform: uppercase;
-      color: var(--text3);
-    }
-    .form-input, .form-select, .form-textarea {
-      width: 100%; background: transparent;
-      border: none; border-bottom: 1px solid var(--rule2);
-      color: var(--text); font-family: var(--font-b);
-      font-size: 0.9375rem; padding: 10px 0;
-      outline: none; border-radius: 0; -webkit-appearance: none; appearance: none;
-      transition: border-color 0.2s;
-    }
-    .form-input::placeholder, .form-textarea::placeholder { color: var(--text3); }
-    .form-input:focus, .form-select:focus, .form-textarea:focus {
-      border-color: var(--amber);
-    }
-    .form-select { cursor: pointer; }
-    .form-select option { background: var(--bg2); color: var(--text); }
-    .form-textarea { resize: none; line-height: 1.6; }
-    .form-submit {
-      align-self: flex-start;
-      font-family: var(--font-d);
-      font-size: 0.875rem; font-weight: 700;
-      letter-spacing: 0.1em; text-transform: uppercase;
-      color: var(--bg); background: var(--amber);
-      border: none; cursor: pointer;
-      padding: 14px 36px; border-radius: 2px;
-      transition: opacity 0.18s;
-    }
-    .form-submit:hover { opacity: 0.82; }
-    .form-submit:disabled { opacity: 0.5; cursor: not-allowed; }
-    .form-ok, .form-err {
-      display: none; padding: 16px 20px;
-      border-radius: 2px; font-size: 0.875rem;
-    }
-    .form-ok {
-      background: oklch(68% 0.22 272 / 0.08);
-      border: 1px solid oklch(68% 0.22 272 / 0.28);
-      color: var(--amber);
-    }
-    .form-err {
-      background: oklch(55% 0.2 25 / 0.08);
-      border: 1px solid oklch(55% 0.2 25 / 0.28);
-      color: oklch(70% 0.15 25);
-    }
-
-    /* ── DONATE ──────────────────────────────────────────────*/
-    #donate {
-      background: var(--bg2);
-      border-top: 1px solid var(--rule);
-    }
-    .donate-inner {
-      display: grid; grid-template-columns: 1fr; gap: 48px;
-      align-items: center;
-    }
-    @media (min-width: 768px) {
-      .donate-inner { grid-template-columns: 1fr auto; gap: 64px; }
-    }
-    .donate-h {
-      font-family: var(--font-d);
-      font-size: clamp(1.75rem, 4vw, 2.75rem);
-      font-weight: 900; line-height: 1.05;
-      text-transform: uppercase; color: var(--text);
-      margin-bottom: 20px;
-    }
-    .donate-p {
-      font-size: 0.9375rem; font-weight: 300;
-      line-height: 1.7; color: var(--text2); max-width: 52ch;
-    }
-    .donate-action {
-      display: flex; flex-direction: column;
-      align-items: flex-start; gap: 12px;
-    }
-    @media (min-width: 768px) { .donate-action { align-items: flex-end; } }
-    .donate-btn {
-      display: inline-flex; align-items: center; gap: 10px;
-      font-family: var(--font-d);
-      font-size: 0.9375rem; font-weight: 700;
-      letter-spacing: 0.1em; text-transform: uppercase;
-      color: var(--bg); background: var(--amber);
-      padding: 16px 36px; border-radius: 2px;
-      transition: opacity 0.18s; white-space: nowrap;
-    }
-    .donate-btn:hover { opacity: 0.82; }
-    .donate-note {
-      font-size: 0.75rem; color: var(--text3);
-      text-align: right;
-    }
-
-    /* ── FOOTER ────────────────────────────────────────────── */
-    footer {
-      background: var(--bg);
-      border-top: 1px solid var(--rule);
-      padding: 24px;
-    }
-    .foot-inner {
-      max-width: var(--max); margin: 0 auto;
-      display: flex; flex-direction: column; gap: 12px;
-    }
-    @media (min-width: 640px) {
-      .foot-inner { flex-direction: row; align-items: center; justify-content: space-between; }
-    }
-    .foot-name {
-      font-family: var(--font-d);
-      font-size: 0.875rem; font-weight: 800;
-      letter-spacing: 0.1em; text-transform: uppercase;
-      color: var(--text3);
-    }
-    .foot-copy { font-size: 0.75rem; color: var(--text3); }
-    .foot-links { display: flex; gap: 24px; }
-    .foot-links a {
-      font-size: 0.75rem; letter-spacing: 0.08em;
-      text-transform: uppercase; color: var(--text3);
-      transition: color 0.15s;
-    }
-    .foot-links a:hover { color: var(--amber); }
-  </style>
+  ]
+}
+</script>
 </head>
-<body>
+<body class="home">
+<a class="skip" href="#main">Skip to content</a>
 
-  <!-- Topbar -->
-  <header class="topbar">
-    <span class="topbar-name">Sakhile Bhayi</span>
-    <button class="menu-btn" id="menu-open" aria-label="Open navigation">
-      <svg viewBox="0 0 24 24" stroke-width="1.5">
-        <line x1="3" y1="7" x2="21" y2="7"/>
-        <line x1="3" y1="12" x2="21" y2="12"/>
-        <line x1="3" y1="17" x2="21" y2="17"/>
-      </svg>
-    </button>
-  </header>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-out" viewBox="0 0 16 16"><path d="M5 11 11 5M6.25 5H11v4.75" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-next" viewBox="0 0 16 16"><path d="M3 8h9.5M8.75 4.25 12.5 8l-3.75 3.75" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-err" viewBox="0 0 16 16"><circle cx="8" cy="8" r="6.75" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 4.75v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="8" cy="11.25" r="1" fill="currentColor"/></symbol>
+  <symbol id="i-ok" viewBox="0 0 16 16"><circle cx="8" cy="8" r="6.75" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="m5.25 8.25 1.9 1.9 3.6-4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
 
-  <!-- Drawer -->
-  <div class="drawer-overlay" id="drawer-overlay">
-    <nav class="drawer">
-      <button class="drawer-close" id="drawer-close" aria-label="Close navigation">
-        <svg viewBox="0 0 24 24" stroke-width="1.5">
-          <line x1="5" y1="5" x2="19" y2="19"/>
-          <line x1="19" y1="5" x2="5" y2="19"/>
-        </svg>
-      </button>
-      <div style="display:flex;align-items:center;gap:12px">
-        <img src="/logo.png" alt="Sakhile Bhayi" style="width:32px;height:32px;object-fit:contain;opacity:0.9"/>
-        <span class="drawer-brand">Sakhile Bhayi</span>
+<header class="nav band">
+  <div class="wrap">
+    <a class="nav__name" href="/">Sakhile Bhayi</a>
+  </div>
+</header>
+<nav class="dock" aria-label="Primary">
+  <a href="/work/"><svg class="dock__ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.8"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.8"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.8"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.8"/></svg><span>Work</span></a>
+  <a href="/approach/"><svg class="dock__ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="m15.6 8.4-2.1 5.1-5.1 2.1 2.1-5.1z"/></svg><span>Approach</span></a>
+  <a href="/about/"><svg class="dock__ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8.5" r="3.6"/><path d="M5 20c.6-3.6 3.5-5.5 7-5.5s6.4 1.9 7 5.5"/></svg><span>About</span></a>
+  <a href="/contact/"><svg class="dock__ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5.5" width="17" height="13" rx="2.5"/><path d="m4.5 8 7.5 5.5L19.5 8"/></svg><span>Contact</span></a>
+</nav>
+
+<main id="main">
+
+  <!-- 1. The letter -->
+  <section class="letter band" aria-label="Introduction">
+    <div class="hero-bg" aria-hidden="true">
+      <picture>
+        <source media="(max-width: 734px)" type="image/avif" srcset="/assets/photo-hero-800.avif 800w" sizes="100vw">
+        <source media="(max-width: 734px)" type="image/webp" srcset="/assets/photo-hero-800.webp 800w" sizes="100vw">
+        <source type="image/avif" srcset="/assets/photo-hero-1440.avif 1440w, /assets/photo-hero-1920.avif 1920w" sizes="100vw">
+        <source type="image/webp" srcset="/assets/photo-hero-1440.webp 1440w, /assets/photo-hero-1920.webp 1920w" sizes="100vw">
+        <img src="/assets/photo-hero-1440.webp" width="1440" height="960" alt="" decoding="async">
+      </picture>
+    </div>
+    <div class="wrap grid letter__grid">
+      <div class="letter__text">
+        <h2 class="letter__head">From fragmented information to connected intelligence.</h2>
+        <p class="letter__p" id="letter">I'm a mine control systems engineer and full stack developer turned founder. I've worked in <span class="fact" style="--i:0">mining operations</span> since 2019, where the same number is captured several times and nobody is sure which one is true. Growing businesses have that problem without a control room to fix it. I built the <a class="fact" href="/work/" style="--i:1">Dot.Eco-system</a> with <span class="fact" style="--i:2">an AI-native engineering practice</span> to fix it for them.</p>
+        <p class="letter__acts">
+          <a class="tlink" href="/contact/?subject=invest">Talk to me about investing or partnering<svg class="ic" aria-hidden="true"><use href="#i-next"/></svg></a>
+          <a class="tlink tlink--quiet" href="/work/">See what I've built<svg class="ic" aria-hidden="true"><use href="#i-next"/></svg></a>
+        </p>
+        <div class="letter__sign">
+          <h1>Sakhile Bhayi</h1>
+          <span><span class="sep" aria-hidden="true">·</span>Founder, Dot.Eco-system</span>
+          <span><span class="sep" aria-hidden="true">·</span>South Africa</span>
+        </div>
       </div>
-      <ul class="drawer-nav">
-        <li><a href="#home">Overview</a></li>
-        <li><a href="#capabilities">Capabilities</a></li>
-        <li><a href="#about">Story</a></li>
-        <li><a href="#expertise">Expertise</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#profile">Profile</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <figure class="mark">
+        <picture>
+          <source type="image/avif" srcset="/assets/mark-640.avif 640w, /assets/mark-965.avif 965w" sizes="(min-width:1069px) 600px, 86vw" width="965" height="365">
+          <source type="image/webp" srcset="/assets/mark-640.webp 640w, /assets/mark-965.webp 965w" sizes="(min-width:1069px) 600px, 86vw" width="965" height="365">
+          <img src="/assets/mark-640.webp" width="965" height="365" fetchpriority="high" decoding="async" alt="Sakhile Bhayi, signature logo">
+        </picture>
+      </figure>
+    </div>
+    <div class="wrap letter__proof">
+      <ul role="list" aria-label="At a glance">
+        <li><strong data-count="12" data-suffix="+" data-final="12+">12+</strong><span>platforms built and deployed</span></li>
+        <li><strong data-count="1000" data-suffix="+" data-final="1,000+">1,000+</strong><span>automated tests on every Dot.Mines change</span></li>
+        <li><strong>Since 2023</strong><span>mine control systems with Modular Mining, a Komatsu company, at Anglo American operations</span></li>
       </ul>
-    </nav>
+    </div>
+  </section>
+
+
+  <!-- 2. The problem -->
+  <section class="sec sec--dark sec--scene band" aria-labelledby="problem-h">
+    <div class="wrap grid">
+      <div class="sec__head">
+        <h2 class="t-section" id="problem-h">Your numbers live in too many places.</h2>
+        <p class="t-intro">I build the systems that connect them into one picture you can run the business on.</p>
+      </div>
+      <div class="prose col-8">
+        <p>A growing business has a sales system, an accounting package, a stock sheet, a job board and a few WhatsApp groups. Each one holds a slice of the truth. Every week someone joins the slices by hand to make a report, and the people who have to decide are never quite sure the figure is current.</p>
+        <p>Mine control rooms have the same problem: the same data gets captured several times, reports disagree, and nobody is sure which number is true.</p>
+      </div>
+      <div class="scene" aria-hidden="true">
+        <div class="scene__stage">
+          <div class="scene__panel">
+            <ul class="scene__rows">
+              <li class="chip" data-label="Sales system"><i></i></li>
+              <li class="chip" data-label="Accounting package"><i></i></li>
+              <li class="chip" data-label="Stock sheet"><i></i></li>
+              <li class="chip" data-label="Job board"><i></i></li>
+              <li class="chip" data-label="WhatsApp groups"><i></i></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <ul class="rows after-rows" role="list">
+        <li><h3 class="t-minor">Reports that take hours to build.</h3><p>Someone exports, copies and reconciles by hand every week, and the report is out of date by the time it is read.</p></li>
+        <li><h3 class="t-minor">Figures that disagree.</h3><p>Sales, finance and operations each hold a version of the same number, and the meeting starts with an argument about which one is right.</p></li>
+        <li><h3 class="t-minor">The same thing typed in twice.</h3><p>An order, a job or a stock count is entered in two or three places, and every retyping is a chance to get it wrong.</p></li>
+        <li><h3 class="t-minor">Numbers nobody can date.</h3><p>Nobody can say where a figure came from or how old it is, so decisions wait, or get made on stale information.</p></li>
+        <li><h3 class="t-minor">AI with no one in charge.</h3><p>You want AI to save time, but you don't want it acting on your business without a person deciding and a record of what it did.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 3. How I can help -->
+  <section class="sec sec--grey band" aria-labelledby="help-h">
+    <div class="wrap grid">
+      <div class="sec__head">
+        <h2 class="t-section" id="help-h">How I can help</h2>
+      </div>
+      <div class="prose col-8">
+        <p>The work starts by finding where your information breaks. I can begin with a diagnostic: a written map of where figures are captured twice, disagree or go stale, the recurring errors written as rules, a baseline we agree on, and a plan for which connections to build first. After that I can join your existing systems into one view that shows where each number came from and how old it is, with recurring reports written from shared templates.</p>
+        <p>I can also help an organisation find where AI saves real time and set the approvals, records and limits around it, and help a founder scope a product and build it with an AI-native workflow, the way I built the Dot.Eco-system.</p>
+        <p class="more"><a class="tlink" href="/approach/">What each offer includes, and how I work<svg class="ic" aria-hidden="true"><use href="#i-next"/></svg></a></p>
+        <h3 class="t-minor minor-head">Where things stand</h3>
+        <p>A first engagement starts by agreeing a baseline, such as the hours it takes to produce the weekly report or the gap between two systems' versions of the same figure, and the work is measured against it.</p>
+
+      </div>
+      <figure class="help-photo">
+          <picture>
+            <source type="image/avif" srcset="/assets/night-tower-640.avif 640w, /assets/night-tower-900.avif 900w" sizes="(min-width:1069px) 33vw, (min-width:735px) 40vw, 100vw">
+            <source type="image/webp" srcset="/assets/night-tower-640.webp 640w, /assets/night-tower-900.webp 900w" sizes="(min-width:1069px) 33vw, (min-width:735px) 40vw, 100vw">
+            <img src="/assets/night-tower-640.webp" width="900" height="1125" loading="lazy" decoding="async"
+                 alt="A tall tower with lit windows in a city at night.">
+          </picture>
+        </figure>
+    </div>
+  </section>
+
+  <section class="sec sec--white band" id="career" aria-labelledby="career-h">
+    <div class="wrap">
+      <div class="grid">
+        <div class="sec__head">
+          <h2 class="t-section" id="career-h">Career</h2>
+          <p class="t-intro">From 2014 to 2018 I worked in technology solutions architecture. I've worked in mining operations since 2019.</p>
+        </div>
+        <ol class="career__list" role="list">
+          <li>
+            <h3 class="career__who">Pure Systems Group</h3>
+            <p class="career__when tnum">2014–2018</p>
+            <p class="career__role">Technical solutions architect</p>
+            <p class="career__more">Technology solutions architecture: data platforms, network security and infrastructure.</p>
+          </li>
+          <li>
+            <h3 class="career__who">Glencore South Africa</h3>
+            <p class="career__when tnum">2019–2021</p>
+            <p class="career__role">Site technician</p>
+            <p class="career__more">Site technology inside active mining operations. That is where I first saw how operational data breaks.</p>
+          </li>
+          <li>
+            <h3 class="career__who">Dot.Eco-system</h3>
+            <p class="career__when tnum">2021–now</p>
+            <p class="career__role">Founder</p>
+            <p class="career__more">The platforms I designed and built. The first piece began as a file-management side project in 2021; most of the platforms were built in 2026.</p>
+          </li>
+          <li>
+            <h3 class="career__who">Modular Mining, a Komatsu company, at Anglo American operations</h3>
+            <p class="career__when tnum">2023–now</p>
+            <p class="career__role">Mine control systems engineering</p>
+            <p class="career__more">Fleet-management, machine-health and guidance systems, and the telematics, GPS and payload data they run on.</p>
+          </li>
+        </ol>
+      </div>
+      <p class="more"><a class="tlink" href="/about/">More about how I got here<svg class="ic" aria-hidden="true"><use href="#i-next"/></svg></a></p>
+    </div>
+  </section>
+
+  <!-- 5. What I've built -->
+  <div class="photo photo--sky">
+    <picture>
+      <source media="(max-width: 734px)" type="image/avif" srcset="/assets/night-dusk-800.avif 800w" sizes="100vw" width="800" height="400">
+      <source media="(max-width: 734px)" type="image/webp" srcset="/assets/night-dusk-800.webp 800w" sizes="100vw" width="800" height="400">
+      <source type="image/avif" srcset="/assets/night-dusk-1440.avif 1440w, /assets/night-dusk-1920.avif 1920w" sizes="100vw" width="1440" height="720">
+      <source type="image/webp" srcset="/assets/night-dusk-1440.webp 1440w, /assets/night-dusk-1920.webp 1920w" sizes="100vw" width="1440" height="720">
+      <img src="/assets/night-dusk-1440.webp" width="1440" height="720" loading="lazy" decoding="async" alt="A city skyline at dusk under an orange sky.">
+    </picture>
   </div>
 
-  <!-- Sidebar -->
-  <aside class="sidebar">
-    <div class="sb-brand">
-      <img src="/logo.png" alt="Sakhile Bhayi" class="sb-logo"/>
-      <div class="sb-name">Sakhile Bhayi</div>
-      <div class="sb-role">Intelligence Architect</div>
-    </div>
-    <ul class="sb-nav">
-      <li><a href="#home" data-s="home" class="nav-link active">Overview</a></li>
-      <li><a href="#capabilities" data-s="capabilities" class="nav-link">Capabilities</a></li>
-      <li><a href="#about" data-s="about" class="nav-link">Story</a></li>
-      <li><a href="#expertise" data-s="expertise" class="nav-link">Expertise</a></li>
-      <li><a href="#education" data-s="education" class="nav-link">Education</a></li>
-      <li><a href="#portfolio" data-s="portfolio" class="nav-link">Portfolio</a></li>
-      <li><a href="#profile" data-s="profile" class="nav-link">Profile</a></li>
-      <li><a href="#contact" data-s="contact" class="nav-link">Contact</a></li>
-    </ul>
-    <div class="sb-foot">
-      <p>South Africa &mdash; SAST (UTC+2)<br/>Available for engagements</p>
-      <a href="#contact" class="sb-foot-cta">Get in touch &rarr;</a>
-    </div>
-  </aside>
-
-  <!-- Main -->
-  <main class="main">
-
-    <!-- Hero -->
-    <section id="home" style="scroll-margin-top:0">
-      <div class="hero-wrap">
-        <div class="hero-eyebrow">
-          <span>South Africa &middot; 2026</span>
-        </div>
-        <h1 class="hero-h1">Intelligence<br/>Architect</h1>
-        <div class="hero-row">
-          <p class="hero-bio">I help mining organisations convert fragmented operational data into confident decisions, stronger leadership visibility, and consistent production momentum.</p>
-          <div class="hero-actions">
-            <a href="#contact" class="btn-p">Start a Conversation</a>
-            <a href="#about" class="btn-g">Full Story</a>
-          </div>
+  <section class="sec sec--grey band" id="built" aria-labelledby="built-h">
+    <div class="wrap">
+      <div class="grid built__head">
+        <div class="built__text">
+          <h2 class="t-section" id="built-h">What I've built</h2>
+          <p class="t-intro">Most of the Dot.Eco-system was built in 2026. These four platforms carry its main ideas, and each one says how far it has got.</p>
         </div>
       </div>
-    </section>
 
-    <!-- Stats -->
-    <div class="stats-band">
-      <div class="stats-grid">
-        <div class="stat">
-          <div class="stat-n">10+</div>
-          <div class="stat-l">Years in Industry</div>
-        </div>
-        <div class="stat">
-          <div class="stat-n">40+</div>
-          <div class="stat-l">Digital Initiatives</div>
-        </div>
-        <div class="stat">
-          <div class="stat-n">24/7</div>
-          <div class="stat-l">Operational Mindset</div>
-        </div>
-        <div class="stat">
-          <div class="stat-n">ZA</div>
-          <div class="stat-l">South Africa Based</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Capabilities -->
-    <section id="capabilities">
-      <div class="wrap">
-        <div class="s-label">Capabilities</div>
-        <h2 class="s-head">What I Build</h2>
-        <div class="cap-list">
-          <div class="cap-item">
-            <span class="cap-n">01</span>
-            <div class="cap-title">Fleet Intelligence Platforms</div>
-            <p class="cap-desc">Real-time orchestration of heavy assets through low-latency telemetry and autonomous command structures. Cycle efficiency, load performance, and utilisation tracked live &mdash; from pit to control room.</p>
-          </div>
-          <div class="cap-item">
-            <span class="cap-n">02</span>
-            <div class="cap-title">Performance Analytics</div>
-            <p class="cap-desc">Executive-ready dashboards that turn complex production data into immediate action. From daily shift reporting to boardroom KPIs &mdash; designed for the people who need clarity under pressure.</p>
-          </div>
-          <div class="cap-item">
-            <span class="cap-n">03</span>
-            <div class="cap-title">AI Decision Support</div>
-            <p class="cap-desc">Practical AI copilots and automation flows that reduce manual load, improve consistency, and sharpen operational decision quality on every shift. Built on proven patterns, not experiments.</p>
-          </div>
-          <div class="cap-item">
-            <span class="cap-n">04</span>
-            <div class="cap-title">Industrial System Integration</div>
-            <p class="cap-desc">Integrating OEM APIs, telemetry streams, and operational databases into reliable platforms your teams can trust every shift. The invisible infrastructure that makes everything else work.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- About / Story -->
-    <section id="about">
-      <div class="wrap">
-        <div class="s-label">Biography &middot; 2015 &mdash; Today</div>
-        <h2 class="s-head">Narrative Path</h2>
-        <div class="timeline">
-          <div class="era">
-            <div class="era-yr">2015 &rarr;</div>
-            <h3 class="era-t">Operational Grounding</h3>
-            <p class="era-p">Built practical mine-site insight across shift discipline, production priorities, and the realities of data quality at source. Every decision demanded accountability under pressure.</p>
-          </div>
-          <div class="era">
-            <div class="era-yr">2018 &rarr;</div>
-            <h3 class="era-t">Systems Delivery</h3>
-            <p class="era-p">Led software delivery initiatives focused on fleet visibility, production reporting, and faster decision cycles across mining operations. Platform architecture connecting telemetry and leadership KPIs.</p>
-          </div>
-          <div class="era">
-            <div class="era-yr">Today</div>
-            <h3 class="era-t">Intelligence Leadership</h3>
-            <p class="era-p">Driving AI-assisted operational leadership through confidence-first product strategy, architecture, and execution &mdash; building living industrial intelligence systems.</p>
-          </div>
-        </div>
-        <div class="philosophy">
-          <h3 class="phil-quote">When insight is clear, teams execute with confidence.</h3>
-          <div class="phil-grid">
-            <div>
-              <div class="principle-n">01</div>
-              <h4 class="principle-t">Technical Rigor</h4>
-              <p class="principle-p">Every system must survive the friction of reality. Build for frontline usability first &mdash; solutions your teams trust every shift.</p>
-            </div>
-            <div>
-              <div class="principle-n">02</div>
-              <h4 class="principle-t">Embedded Intelligence</h4>
-              <p class="principle-p">Make performance truth visible early. Turn insights into accountable actions &mdash; from supervisor to executive. Technology should serve people, not the other way around.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Expertise -->
-    <section id="expertise">
-      <div class="wrap">
-        <div class="s-label">Skills and Employment</div>
-        <h2 class="s-head">Expertise</h2>
-        <div class="expertise-grid">
+      <ul class="features" role="list" aria-label="Four Dot.Eco-system platforms">
+        <li class="feature">
+          <a class="feature__logo-link" href="https://www.infodot.co.za/" target="_blank" rel="noopener" aria-label="InfoDot, opens in a new tab"><picture><source type="image/avif" srcset="/logos/infodot-144.avif 144w, /logos/infodot-288.avif 288w" sizes="(max-width: 734px) 90px, 112px"><img class="feature__logo feature__logo--infodot" src="/logos/infodot-144.webp" srcset="/logos/infodot-144.webp 144w, /logos/infodot-288.webp 288w" sizes="(max-width: 734px) 90px, 112px" width="144" height="62" alt="" loading="lazy" decoding="async"></picture></a>
           <div>
-            <div class="col-label">Technical Skills</div>
-            <div class="skill-cat">
-              <div class="skill-cat-name">Mining Applications</div>
-              <ul class="skill-list">
-                <li>Minecare, Dispatch, Provision, Mine Alert</li>
-                <li>AVA, Intellimine, Fleet Management Systems</li>
-                <li>GPS and payload integration, real-time telemetry</li>
-              </ul>
-            </div>
-            <div class="skill-cat">
-              <div class="skill-cat-name">Software Development</div>
-              <ul class="skill-list">
-                <li>PHP, C#, ASP.Net, JavaScript</li>
-                <li>VueJS, Livewire, Visual Basic .NET</li>
-                <li>Database development and administration</li>
-              </ul>
-            </div>
-            <div class="skill-cat">
-              <div class="skill-cat-name">Platforms &amp; Infrastructure</div>
-              <ul class="skill-list">
-                <li>AWS (Solutions Architect Associate &amp; Professional modules)</li>
-                <li>Microsoft SharePoint, Office 365, PowerBI</li>
-                <li>Network architecture, server administration</li>
-              </ul>
-            </div>
-            <div class="skill-cat">
-              <div class="skill-cat-name">Artificial Intelligence</div>
-              <ul class="skill-list">
-                <li>LLMs, Claude API, prompt engineering, RAG</li>
-                <li>MCP protocols, subagents, agent skills</li>
-                <li>AI workflow design, business process automation</li>
-              </ul>
-            </div>
+            <h3 class="feature__name">InfoDot</h3>
+            <p class="feature__line">InfoDot exists to help people start, operate, manage, and grow successful businesses by combining collective human experience, practical knowledge, AI-assisted guidance, and business intelligence from across the Dot.Eco-system. Today it holds a knowledge base for a business's questions and verified solutions, and connects the platforms around it.</p>
+            <p class="state">Deployed.</p>
           </div>
+        </li>
+        <li class="feature">
+          <a class="feature__logo-link" href="https://mines.infodot.co.za/" target="_blank" rel="noopener" aria-label="Dot.Mines, opens in a new tab"><picture><source type="image/avif" srcset="/logos/dot-mines-240.avif 240w, /logos/dot-mines-420.avif 420w" sizes="(max-width: 734px) 138px, 173px"><img class="feature__logo feature__logo--mines" src="/logos/dot-mines-240.webp" srcset="/logos/dot-mines-240.webp 240w, /logos/dot-mines-420.webp 420w" sizes="(max-width: 734px) 138px, 173px" width="240" height="180" alt="" loading="lazy" decoding="async"></picture></a>
           <div>
-            <div class="col-label">Employment History</div>
-            <ul class="job-list">
-              <li class="job">
-                <div class="job-period">2021 &mdash; Present</div>
-                <div class="job-role">Founder</div>
-                <div class="job-org">BluPin Inc.</div>
-                <div class="job-desc">Procurement, investment management, and digital platform strategy.</div>
-              </li>
-              <li class="job">
-                <div class="job-period">Feb 2023 &mdash; Present</div>
-                <div class="job-role">Mine Control Systems Engineer</div>
-                <div class="job-org">Modular Mining / Anglo American</div>
-                <div class="job-desc">Application management, compliance, data flow automation, PowerBI delivery, and real-time GPS and payload integrations.</div>
-              </li>
-              <li class="job">
-                <div class="job-period">Feb 2023 &mdash; Present</div>
-                <div class="job-role">Technical Support Specialist</div>
-                <div class="job-org">Komatsu</div>
-                <div class="job-desc">Technical specifications and mining application management processes.</div>
-              </li>
-              <li class="job">
-                <div class="job-period">Mar 2022 &mdash; Aug 2022</div>
-                <div class="job-role">Project Manager &amp; Full Stack Developer</div>
-                <div class="job-org">The Forgotten Angle Theatre Collaborative</div>
-                <div class="job-desc">Website development, UI/UX, and back-end integration delivery.</div>
-              </li>
-              <li class="job">
-                <div class="job-period">Sep 2021 &mdash; Feb 2022</div>
-                <div class="job-role">Full Stack Developer</div>
-                <div class="job-org">GameZBoost (Pty) Ltd</div>
-                <div class="job-desc">Feature development for an e-sports gaming platform.</div>
-              </li>
-              <li class="job">
-                <div class="job-period">Jan 2019 &mdash; Nov 2021</div>
-                <div class="job-role">Site Technician</div>
-                <div class="job-org">Glencore South Africa</div>
-                <div class="job-desc">Network implementation, maintenance, and repair in active mining environments.</div>
-              </li>
-              <li class="job">
-                <div class="job-period">Aug 2014 &mdash; Oct 2018</div>
-                <div class="job-role">Technical Solutions Architect</div>
-                <div class="job-org">Pure Systems Group</div>
-                <div class="job-desc">Secure data platform development, network security, compliance, and infrastructure restructuring.</div>
-              </li>
-              <li class="job">
-                <div class="job-period">Jan 2012 &mdash; Jan 2013</div>
-                <div class="job-role">Solutions Architect</div>
-                <div class="job-org">Kichose Group</div>
-                <div class="job-desc">Web development, server administration, and data security.</div>
-              </li>
-            </ul>
+            <h3 class="feature__name">Dot.Mines</h3>
+            <p class="feature__line">A fleet and mine-operations platform I designed and built. It gives a fleet office one view of machines, production, fuel, maintenance and operator compliance, and it shows how fresh every reading is.</p>
+            <p class="state">Deployed.</p>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Education -->
-    <section id="education">
-      <div class="wrap">
-        <div class="s-label">Academic Record</div>
-        <h2 class="s-head">Education</h2>
-        <div class="edu-grid">
-          <div class="edu-item">
-            <div class="edu-period">2012 &mdash; 2014</div>
-            <div class="edu-degree">B.Tech in Information Technology</div>
-            <div class="edu-inst">Eduvos, Pretoria</div>
-          </div>
-          <div class="edu-item">
-            <div class="edu-period">2012 &mdash; 2014</div>
-            <div class="edu-degree">National Diploma &mdash; IT and Computer Science</div>
-            <div class="edu-inst">Pearsons Institute, South Africa</div>
-          </div>
-          <div class="edu-item">
-            <div class="edu-period">2023 &mdash; 2026</div>
-            <div class="edu-degree">Professional Certifications</div>
-            <div class="edu-inst">Anthropic AI Fluency &amp; Claude Certs &middot; AWS Solutions Architect modules &middot; Modular Mining Minecare 3, Dispatch, Provision</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Portfolio -->
-    <section id="portfolio">
-      <div class="wrap">
-        <div class="s-label">Works and Projects</div>
-        <h2 class="s-head">Portfolio</h2>
-        <div class="portfolio-split">
-
-          <!-- InfoDot Eco-system -->
-          <div class="port-col">
-            <div class="port-col-head">InfoDot Eco-system</div>
-            <div class="port-col-sub">Digital productivity &amp; intelligence tools</div>
-            <ul class="project-list">
-              <li class="project-item">
-                <div class="project-row">
-                  <div class="project-icon">
-                    <img src="/logos/Infobig.png" alt="Mines Fleet Management"/>
-                  </div>
-                  <div class="project-content">
-                    <div class="project-name">Mines Fleet Management</div>
-                    <div class="project-r">
-                      <span class="project-desc">Fleet and mine management system for mining operations.</span>
-                      <a href="https://mines.infodot.co.za" target="_blank" rel="noreferrer" class="project-url">mines.infodot.co.za &nearr;</a>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="project-item">
-                <div class="project-row">
-                  <div class="project-icon">
-                    <img src="/logos/dot_doc.png" alt="Dot.docs"/>
-                  </div>
-                  <div class="project-content">
-                    <div class="project-name">Dot.docs</div>
-                    <div class="project-r">
-                      <span class="project-desc">AI-powered word document creator.</span>
-                      <a href="https://doc.infodot.co.za" target="_blank" rel="noreferrer" class="project-url">doc.infodot.co.za &nearr;</a>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="project-item">
-                <div class="project-row">
-                  <div class="project-icon">
-                    <img src="/logos/dot_files.png" alt="Dot.Files"/>
-                  </div>
-                  <div class="project-content">
-                    <div class="project-name">Dot.Files</div>
-                    <div class="project-r">
-                      <span class="project-desc">Mini Dropbox-style file management system.</span>
-                      <a href="https://files.infodot.co.za" target="_blank" rel="noreferrer" class="project-url">files.infodot.co.za &nearr;</a>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="project-item">
-                <div class="project-row">
-                  <div class="project-icon">
-                    <img src="/logos/dot_forms.png" alt="Dot.Forms"/>
-                  </div>
-                  <div class="project-content">
-                    <div class="project-name">Dot.Forms</div>
-                    <div class="project-r">
-                      <span class="project-desc">AI-powered form creation tool.</span>
-                      <a href="https://forms.infodot.co.za" target="_blank" rel="noreferrer" class="project-url">forms.infodot.co.za &nearr;</a>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="project-item">
-                <div class="project-row">
-                  <div class="project-icon">
-                    <img src="/logos/dot_pres.png" alt="Dot.Press"/>
-                  </div>
-                  <div class="project-content">
-                    <div class="project-name">Dot.Press</div>
-                    <div class="project-r">
-                      <span class="project-desc">AI-powered presentation builder.</span>
-                      <a href="https://pres.infodot.co.za" target="_blank" rel="noreferrer" class="project-url">pres.infodot.co.za &nearr;</a>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="project-item">
-                <div class="project-row">
-                  <div class="project-icon">
-                    <img src="/logos/dot_sheet.png" alt="Dot.Sheet"/>
-                  </div>
-                  <div class="project-content">
-                    <div class="project-name">Dot.Sheet</div>
-                    <div class="project-r">
-                      <span class="project-desc">AI-powered spreadsheet application.</span>
-                      <a href="https://sheets.infodot.co.za" target="_blank" rel="noreferrer" class="project-url">sheets.infodot.co.za &nearr;</a>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="project-item">
-                <div class="project-row">
-                  <div class="project-icon">
-                    <img src="/logos/dot_engage.png" alt="Dot.Engage"/>
-                  </div>
-                  <div class="project-content">
-                    <div class="project-name">Dot.Engage</div>
-                    <div class="project-r">
-                      <span class="project-desc">AI-powered chat and email system.</span>
-                      <a href="https://engage.infodot.co.za" target="_blank" rel="noreferrer" class="project-url">engage.infodot.co.za &nearr;</a>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="project-item">
-                <div class="project-row">
-                  <div class="project-icon">
-                    <img src="/logos/Infobig.png" alt="InfoDot"/>
-                  </div>
-                  <div class="project-content">
-                    <div class="project-name">InfoDot</div>
-                    <div class="project-r">
-                      <span class="project-desc">Open community for strategies, solutions, and entrepreneur service access.</span>
-                      <a href="https://infodot.co.za" target="_blank" rel="noreferrer" class="project-url">infodot.co.za &nearr;</a>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-
-          <!-- BluPin Incorporated Power House -->
-          <div class="port-col">
-            <div class="port-col-head">BluPin Incorporated</div>
-            <div class="port-col-sub">Investment, industry &amp; capability building</div>
-            <ul class="project-list">
-              <li class="project-item">
-                <div class="project-row">
-                  <div class="project-icon project-icon--lg">
-                    <img src="/logos/blupin.jpeg" alt="BluPin Inc."/>
-                  </div>
-                  <div class="project-content">
-                    <div class="project-name">BluPin Inc.</div>
-                    <div class="project-r">
-                      <span class="project-desc">Corporate hub for digital strategy, procurement, and investment management across the BluPin portfolio.</span>
-                      <a href="https://blupininc.com" target="_blank" rel="noreferrer" class="project-url">blupininc.com &nearr;</a>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="project-item">
-                <div class="project-row">
-                  <div class="project-icon project-icon--lg">
-                    <img src="/logos/bp_indust.png" alt="BluPin Industrialized"/>
-                  </div>
-                  <div class="project-content">
-                    <div class="project-name">BluPin Industrialized</div>
-                    <div class="project-r">
-                      <span class="project-desc">Digital implementation and resilience support for organisations navigating tooling and value creation.</span>
-                      <a href="https://industrial.blupininc.com" target="_blank" rel="noreferrer" class="project-url">industrial.blupininc.com &nearr;</a>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="project-item">
-                <div class="project-row">
-                  <div class="project-icon project-icon--lg">
-                    <img src="/logos/bp_invest.png" alt="BluPin Capital"/>
-                  </div>
-                  <div class="project-content">
-                    <div class="project-name">BluPin Capital</div>
-                    <div class="project-r">
-                      <span class="project-desc">Trading and investments focused on undervalued markets and long-term wealth creation.</span>
-                      <a href="https://capital.blupininc.com" target="_blank" rel="noreferrer" class="project-url">capital.blupininc.com &nearr;</a>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="project-item">
-                <div class="project-row">
-                  <div class="project-icon project-icon--lg">
-                    <img src="/logos/bp_pr.png" alt="BluPin Public Relations"/>
-                  </div>
-                  <div class="project-content">
-                    <div class="project-name">BluPin Public Relations</div>
-                    <div class="project-r">
-                      <span class="project-desc">Brand communications, media relations, and public affairs for organisations building trust at scale.</span>
-                      <a href="https://bi.blupininc.com" target="_blank" rel="noreferrer" class="project-url">bi.blupininc.com &nearr;</a>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="project-item">
-                <div class="project-row">
-                  <div class="project-icon project-icon--lg">
-                    <img src="/logos/bp_ci.png" alt="BluPin AI Institute"/>
-                  </div>
-                  <div class="project-content">
-                    <div class="project-name">BluPin AI Institute</div>
-                    <div class="project-r">
-                      <span class="project-desc">Community designed to help career changers build AI development capability.</span>
-                      <a href="https://ai.blupininc.com" target="_blank" rel="noreferrer" class="project-url">ai.blupininc.com &nearr;</a>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="project-item">
-                <div class="project-row">
-                  <div class="project-icon project-icon--lg">
-                    <img src="/logos/bp_cfh.png" alt="BluPin Hope"/>
-                  </div>
-                  <div class="project-content">
-                    <div class="project-name">BluPin Hope</div>
-                    <div class="project-r">
-                      <span class="project-desc">Social impact and community development initiative driving meaningful change in underserved communities.</span>
-                      <a href="https://hope.blupininc.com" target="_blank" rel="noreferrer" class="project-url">hope.blupininc.com &nearr;</a>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-
-        </div>
-
-
-      </div>
-    </section>
-
-    <!-- Profile -->
-    <section id="profile">
-      <div class="wrap">
-        <div class="s-label">Professional Profile &middot; 2026</div>
-        <h2 class="s-head">Full Profile</h2>
-        <div class="link-matrix">
-          <a class="link-cell" href="https://orcid.org/my-orcid?orcid=0009-0004-7055-0427" target="_blank" rel="noreferrer">
-            <span class="link-cell-l">ORCID</span>
-            <span class="link-cell-v">0009-0004-7055-0427</span>
-          </a>
-          <a class="link-cell" href="https://sakhilebhayi.com" target="_blank" rel="noreferrer">
-            <span class="link-cell-l">Personal Website</span>
-            <span class="link-cell-v">sakhilebhayi.com</span>
-          </a>
-          <a class="link-cell" href="https://github.com/sakhileb" target="_blank" rel="noreferrer">
-            <span class="link-cell-l">GitHub</span>
-            <span class="link-cell-v">@sakhileb</span>
-          </a>
-          <a class="link-cell" href="https://za.linkedin.com/in/sakhilebayi" target="_blank" rel="noreferrer">
-            <span class="link-cell-l">LinkedIn</span>
-            <span class="link-cell-v">sakhilebayi</span>
-          </a>
-          <a class="link-cell" href="https://stackoverflow.com/users/3772858/sk-digital" target="_blank" rel="noreferrer">
-            <span class="link-cell-l">Stack Overflow</span>
-            <span class="link-cell-v">SK Digital</span>
-          </a>
-          <a class="link-cell" href="https://laracasts.com/@sakhile" target="_blank" rel="noreferrer">
-            <span class="link-cell-l">Laracasts</span>
-            <span class="link-cell-v">@sakhile</span>
-          </a>
-          <a class="link-cell" href="https://blupininc.com" target="_blank" rel="noreferrer">
-            <span class="link-cell-l">BluPin Inc.</span>
-            <span class="link-cell-v">blupininc.com</span>
-          </a>
-          <a class="link-cell" href="https://infodot.co.za" target="_blank" rel="noreferrer">
-            <span class="link-cell-l">InfoDot</span>
-            <span class="link-cell-v">infodot.co.za</span>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact">
-      <div class="wrap">
-        <div class="contact-grid">
+                <figure class="frame feature__frame">
+  <a class="frame__link" href="https://mines.infodot.co.za/" target="_blank" rel="noopener">
+    <span class="frame__bar" aria-hidden="true"><i></i><i></i><i></i><b>mines.infodot.co.za</b></span>
+    <picture>
+      <source type="image/avif" srcset="/assets/pf-mines-640.avif 640w, /assets/pf-mines-1280.avif 1280w" sizes="(min-width:1069px) 440px, 100vw">
+      <img class="frame__img" src="/assets/pf-mines-640.webp" srcset="/assets/pf-mines-640.webp 640w, /assets/pf-mines-1280.webp 1280w" sizes="(min-width:1069px) 440px, 100vw" width="1280" height="800" alt="The Dot.Mines home page." loading="lazy" decoding="async">
+    </picture>
+    <span class="sr-only">Dot.Mines home page (opens in a new tab)</span>
+  </a>
+  <figcaption>Dot.Mines home page</figcaption>
+</figure>
+        </li>
+        <li class="feature">
+          <a class="feature__logo-link" href="https://central.infodot.co.za/" target="_blank" rel="noopener" aria-label="Dot.Central, opens in a new tab"><picture><source type="image/avif" srcset="/logos/dot-central-240.avif 240w, /logos/dot-central-420.avif 420w" sizes="(max-width: 734px) 138px, 173px"><img class="feature__logo feature__logo--mines" src="/logos/dot-central-240.webp" srcset="/logos/dot-central-240.webp 240w, /logos/dot-central-420.webp 420w" sizes="(max-width: 734px) 138px, 173px" width="240" height="180" alt="" loading="lazy" decoding="async"></picture></a>
           <div>
-            <h2 class="contact-h">Let's<br/>Talk.</h2>
-            <div class="contact-channels">
-              <a href="mailto:sakhilebayi@gmail.com" class="contact-ch">
-                <span class="contact-ch-l">Email</span>
-                <span class="contact-ch-v">info@sakhilebhayi.com</span>
-              </a>
-              <a href="tel:+27725553121" class="contact-ch">
-                <span class="contact-ch-l">Phone</span>
-                <span class="contact-ch-v">+27 72 555 3121</span>
-              </a>
-              <a href="https://za.linkedin.com/in/sakhilebayi" target="_blank" rel="noreferrer" class="contact-ch">
-                <span class="contact-ch-l">LinkedIn</span>
-                <span class="contact-ch-v">sakhilebayi</span>
-              </a>
-              <div class="contact-ch" style="cursor:default">
-                <span class="contact-ch-l">Location</span>
-                <span class="contact-ch-v">South Africa &mdash; SAST (UTC+2)</span>
-              </div>
-            </div>
-            <p class="contact-note">Advisory, architecture, and delivery engagements currently open. All communications handled with full confidentiality. Response within 24 hours.</p>
+            <h3 class="feature__name">Dot.Central</h3>
+            <p class="feature__line">A control-room system for a mining shift. It takes fleet facts from Dot.Mines and lets the control room plan the line-up, classify stoppages, handle alerts and hand over, without ever editing a source fact.</p>
+            <p class="state">Deployed.</p>
           </div>
-          <form class="form" id="contact-form" action="https://api.web3forms.com/submit" method="POST" novalidate>
-            <input type="hidden" name="access_key" value="9d573292-9d41-4295-b09a-9b5e8a7b3173"/>
-            <input type="hidden" name="subject" value="Contact Form &mdash; Sakhile Bhayi Website"/>
-            <input type="hidden" name="from_name" value="Sakhile Bhayi Website"/>
-            <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off"/>
-            <div class="form-row">
-              <div class="form-g">
-                <label class="form-lbl" for="cf-name">Full Name</label>
-                <input class="form-input" id="cf-name" name="name" type="text" placeholder="Your name" required/>
-              </div>
-              <div class="form-g">
-                <label class="form-lbl" for="cf-email">Email</label>
-                <input class="form-input" id="cf-email" name="email" type="email" placeholder="email@domain.com" required/>
-              </div>
+                <figure class="frame feature__frame">
+  <a class="frame__link" href="https://central.infodot.co.za/" target="_blank" rel="noopener">
+    <span class="frame__bar" aria-hidden="true"><i></i><i></i><i></i><b>central.infodot.co.za</b></span>
+    <picture>
+      <source type="image/avif" srcset="/assets/pf-central-640.avif 640w, /assets/pf-central-1280.avif 1280w" sizes="(min-width:1069px) 440px, 100vw">
+      <img class="frame__img" src="/assets/pf-central-640.webp" srcset="/assets/pf-central-640.webp 640w, /assets/pf-central-1280.webp 1280w" sizes="(min-width:1069px) 440px, 100vw" width="1280" height="800" alt="The Dot.Central home page." loading="lazy" decoding="async">
+    </picture>
+    <span class="sr-only">Dot.Central home page (opens in a new tab)</span>
+  </a>
+  <figcaption>Dot.Central home page</figcaption>
+</figure>
+        </li>
+        <li class="feature">
+          <a class="feature__logo-link" href="https://doc.infodot.co.za/" target="_blank" rel="noopener" aria-label="Dot.Doc, opens in a new tab"><picture><source type="image/avif" srcset="/logos/dot-doc-240.avif"><img class="feature__logo feature__logo--doc" src="/logos/dot-doc-240.webp" width="240" height="240" alt="" loading="lazy" decoding="async"></picture></a>
+          <div>
+            <h3 class="feature__name">Dot.Doc</h3>
+            <p class="feature__line">Recurring reports, such as production and incident reports, written from shared templates. House styles come out the same in the editor, the PDF and the Word file, with version history and an audit log that cannot be edited. I wrote the career page at the top of this site in it.</p>
+            <p class="state">Live.</p>
+          </div>
+                <figure class="frame feature__frame">
+  <a class="frame__link" href="https://doc.infodot.co.za/" target="_blank" rel="noopener">
+    <span class="frame__bar" aria-hidden="true"><i></i><i></i><i></i><b>doc.infodot.co.za</b></span>
+    <picture>
+      <source type="image/avif" srcset="/assets/pf-doc-640.avif 640w, /assets/pf-doc-1280.avif 1280w" sizes="(min-width:1069px) 440px, 100vw">
+      <img class="frame__img" src="/assets/pf-doc-640.webp" srcset="/assets/pf-doc-640.webp 640w, /assets/pf-doc-1280.webp 1280w" sizes="(min-width:1069px) 440px, 100vw" width="1280" height="800" alt="The Dot.Doc home page." loading="lazy" decoding="async">
+    </picture>
+    <span class="sr-only">Dot.Doc home page (opens in a new tab)</span>
+  </a>
+  <figcaption>Dot.Doc home page</figcaption>
+</figure>
+        </li>
+      </ul>
+
+      <div class="grid">
+        <div class="prose col-8">
+          <h3 class="t-minor minor-head">How it was built</h3>
+          <p>I design the systems and build them with an AI-assisted workflow. I decide what gets built, the rules it must follow and the order changes go in, review what ships, and run it in production. Most Dot.Eco-system platforms are released only after their automated tests pass, and every change to Dot.Mines runs through more than a thousand of them.</p>
+          <p class="more"><a class="tlink" href="/work/">All platforms, and how far each has got<svg class="ic" aria-hidden="true"><use href="#i-next"/></svg></a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Investors and partners -->
+  <section class="sec sec--white band" aria-labelledby="more-h">
+    <div class="wrap">
+      <div class="grid">
+        <div class="sec__head">
+          <h2 class="t-section" id="more-h">More of the Dot.Eco-system</h2>
+          <div class="prose"><p>Every platform has its own home page. Click a frame to open it in a new tab.</p></div>
+        </div>
+      </div>
+      <div class="reel">
+<div class="reel__row">
+<figure class="frame">
+  <a class="frame__link" href="https://agents.infodot.co.za/" target="_blank" rel="noopener">
+    <span class="frame__bar" aria-hidden="true"><i></i><i></i><i></i><b>agents.infodot.co.za</b></span>
+    <picture>
+      <source type="image/avif" srcset="/assets/pf-agents-640.avif 640w, /assets/pf-agents-1280.avif 1280w" sizes="(min-width:1069px) 32vw, 80vw">
+      <img class="frame__img" src="/assets/pf-agents-640.webp" srcset="/assets/pf-agents-640.webp 640w, /assets/pf-agents-1280.webp 1280w" sizes="(min-width:1069px) 32vw, 80vw" width="1280" height="800" alt="The Dot.Agents home page." loading="lazy" decoding="async">
+    </picture>
+    <span class="sr-only">Dot.Agents home page (opens in a new tab)</span>
+  </a>
+  <figcaption>Dot.Agents home page</figcaption>
+</figure>
+<figure class="frame">
+  <a class="frame__link" href="https://forms.infodot.co.za/" target="_blank" rel="noopener">
+    <span class="frame__bar" aria-hidden="true"><i></i><i></i><i></i><b>forms.infodot.co.za</b></span>
+    <picture>
+      <source type="image/avif" srcset="/assets/pf-forms-640.avif 640w, /assets/pf-forms-1280.avif 1280w" sizes="(min-width:1069px) 32vw, 80vw">
+      <img class="frame__img" src="/assets/pf-forms-640.webp" srcset="/assets/pf-forms-640.webp 640w, /assets/pf-forms-1280.webp 1280w" sizes="(min-width:1069px) 32vw, 80vw" width="1280" height="800" alt="The Dot.Forms home page." loading="lazy" decoding="async">
+    </picture>
+    <span class="sr-only">Dot.Forms home page (opens in a new tab)</span>
+  </a>
+  <figcaption>Dot.Forms home page</figcaption>
+</figure>
+<figure class="frame">
+  <a class="frame__link" href="https://files.infodot.co.za/" target="_blank" rel="noopener">
+    <span class="frame__bar" aria-hidden="true"><i></i><i></i><i></i><b>files.infodot.co.za</b></span>
+    <picture>
+      <source type="image/avif" srcset="/assets/pf-files-640.avif 640w, /assets/pf-files-1280.avif 1280w" sizes="(min-width:1069px) 32vw, 80vw">
+      <img class="frame__img" src="/assets/pf-files-640.webp" srcset="/assets/pf-files-640.webp 640w, /assets/pf-files-1280.webp 1280w" sizes="(min-width:1069px) 32vw, 80vw" width="1280" height="800" alt="The Dot.Files home page." loading="lazy" decoding="async">
+    </picture>
+    <span class="sr-only">Dot.Files home page (opens in a new tab)</span>
+  </a>
+  <figcaption>Dot.Files home page</figcaption>
+</figure>
+<figure class="frame">
+  <a class="frame__link" href="https://engage.infodot.co.za/" target="_blank" rel="noopener">
+    <span class="frame__bar" aria-hidden="true"><i></i><i></i><i></i><b>engage.infodot.co.za</b></span>
+    <picture>
+      <source type="image/avif" srcset="/assets/pf-engage-640.avif 640w, /assets/pf-engage-1280.avif 1280w" sizes="(min-width:1069px) 32vw, 80vw">
+      <img class="frame__img" src="/assets/pf-engage-640.webp" srcset="/assets/pf-engage-640.webp 640w, /assets/pf-engage-1280.webp 1280w" sizes="(min-width:1069px) 32vw, 80vw" width="1280" height="800" alt="The Dot.Engage home page." loading="lazy" decoding="async">
+    </picture>
+    <span class="sr-only">Dot.Engage home page (opens in a new tab)</span>
+  </a>
+  <figcaption>Dot.Engage home page</figcaption>
+</figure>
+<figure class="frame">
+  <a class="frame__link" href="https://pres.infodot.co.za/" target="_blank" rel="noopener">
+    <span class="frame__bar" aria-hidden="true"><i></i><i></i><i></i><b>pres.infodot.co.za</b></span>
+    <picture>
+      <source type="image/avif" srcset="/assets/pf-pres-640.avif 640w, /assets/pf-pres-1280.avif 1280w" sizes="(min-width:1069px) 32vw, 80vw">
+      <img class="frame__img" src="/assets/pf-pres-640.webp" srcset="/assets/pf-pres-640.webp 640w, /assets/pf-pres-1280.webp 1280w" sizes="(min-width:1069px) 32vw, 80vw" width="1280" height="800" alt="The Dot.Press home page." loading="lazy" decoding="async">
+    </picture>
+    <span class="sr-only">Dot.Press home page (opens in a new tab)</span>
+  </a>
+  <figcaption>Dot.Press home page</figcaption>
+</figure>
+<figure class="frame">
+  <a class="frame__link" href="https://dopemine.infodot.co.za/" target="_blank" rel="noopener">
+    <span class="frame__bar" aria-hidden="true"><i></i><i></i><i></i><b>dopemine.infodot.co.za</b></span>
+    <picture>
+      <source type="image/avif" srcset="/assets/pf-dopemine-640.avif 640w, /assets/pf-dopemine-1280.avif 1280w" sizes="(min-width:1069px) 32vw, 80vw">
+      <img class="frame__img" src="/assets/pf-dopemine-640.webp" srcset="/assets/pf-dopemine-640.webp 640w, /assets/pf-dopemine-1280.webp 1280w" sizes="(min-width:1069px) 32vw, 80vw" width="1280" height="800" alt="The Dot.Dopemine home page." loading="lazy" decoding="async">
+    </picture>
+    <span class="sr-only">Dot.Dopemine home page (opens in a new tab)</span>
+  </a>
+  <figcaption>Dot.Dopemine home page</figcaption>
+</figure>
+<figure class="frame">
+  <a class="frame__link" href="https://memory.infodot.co.za/" target="_blank" rel="noopener">
+    <span class="frame__bar" aria-hidden="true"><i></i><i></i><i></i><b>memory.infodot.co.za</b></span>
+    <picture>
+      <source type="image/avif" srcset="/assets/pf-memory-640.avif 640w, /assets/pf-memory-1280.avif 1280w" sizes="(min-width:1069px) 32vw, 80vw">
+      <img class="frame__img" src="/assets/pf-memory-640.webp" srcset="/assets/pf-memory-640.webp 640w, /assets/pf-memory-1280.webp 1280w" sizes="(min-width:1069px) 32vw, 80vw" width="1280" height="800" alt="The Dot.Memory home page." loading="lazy" decoding="async">
+    </picture>
+    <span class="sr-only">Dot.Memory home page (opens in a new tab)</span>
+  </a>
+  <figcaption>Dot.Memory home page</figcaption>
+</figure>
+<figure class="frame">
+  <a class="frame__link" href="https://analytics.infodot.co.za/" target="_blank" rel="noopener">
+    <span class="frame__bar" aria-hidden="true"><i></i><i></i><i></i><b>analytics.infodot.co.za</b></span>
+    <picture>
+      <source type="image/avif" srcset="/assets/pf-analytics-640.avif 640w, /assets/pf-analytics-1280.avif 1280w" sizes="(min-width:1069px) 32vw, 80vw">
+      <img class="frame__img" src="/assets/pf-analytics-640.webp" srcset="/assets/pf-analytics-640.webp 640w, /assets/pf-analytics-1280.webp 1280w" sizes="(min-width:1069px) 32vw, 80vw" width="1280" height="800" alt="The Dot.Analytics home page." loading="lazy" decoding="async">
+    </picture>
+    <span class="sr-only">Dot.Analytics home page (opens in a new tab)</span>
+  </a>
+  <figcaption>Dot.Analytics home page</figcaption>
+</figure>
+<figure class="frame">
+  <a class="frame__link" href="https://sheets.infodot.co.za/" target="_blank" rel="noopener">
+    <span class="frame__bar" aria-hidden="true"><i></i><i></i><i></i><b>sheets.infodot.co.za</b></span>
+    <picture>
+      <source type="image/avif" srcset="/assets/pf-sheets-640.avif 640w, /assets/pf-sheets-1280.avif 1280w" sizes="(min-width:1069px) 32vw, 80vw">
+      <img class="frame__img" src="/assets/pf-sheets-640.webp" srcset="/assets/pf-sheets-640.webp 640w, /assets/pf-sheets-1280.webp 1280w" sizes="(min-width:1069px) 32vw, 80vw" width="1280" height="800" alt="The Dot.Sheet home page." loading="lazy" decoding="async">
+    </picture>
+    <span class="sr-only">Dot.Sheet home page (opens in a new tab)</span>
+  </a>
+  <figcaption>Dot.Sheet home page</figcaption>
+</figure>
+<figure class="frame">
+  <a class="frame__link" href="https://tasks.infodot.co.za/" target="_blank" rel="noopener">
+    <span class="frame__bar" aria-hidden="true"><i></i><i></i><i></i><b>tasks.infodot.co.za</b></span>
+    <picture>
+      <source type="image/avif" srcset="/assets/pf-tasks-640.avif 640w, /assets/pf-tasks-1280.avif 1280w" sizes="(min-width:1069px) 32vw, 80vw">
+      <img class="frame__img" src="/assets/pf-tasks-640.webp" srcset="/assets/pf-tasks-640.webp 640w, /assets/pf-tasks-1280.webp 1280w" sizes="(min-width:1069px) 32vw, 80vw" width="1280" height="800" alt="The Dot.Tasks home page." loading="lazy" decoding="async">
+    </picture>
+    <span class="sr-only">Dot.Tasks home page (opens in a new tab)</span>
+  </a>
+  <figcaption>Dot.Tasks home page</figcaption>
+</figure>
+</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec sec--dark sec--invest band" aria-labelledby="invest-h">
+    <div class="hero-bg" aria-hidden="true">
+      <picture>
+        <source media="(max-width: 734px)" type="image/avif" srcset="/assets/night-hill-800.avif 800w" sizes="100vw">
+        <source media="(max-width: 734px)" type="image/webp" srcset="/assets/night-hill-800.webp 800w" sizes="100vw">
+        <source type="image/avif" srcset="/assets/night-hill-1440.avif 1440w, /assets/night-hill-1920.avif 1920w" sizes="100vw">
+        <source type="image/webp" srcset="/assets/night-hill-1440.webp 1440w, /assets/night-hill-1920.webp 1920w" sizes="100vw">
+        <img src="/assets/night-hill-1440.webp" width="1440" height="720" alt="" decoding="async" loading="lazy">
+      </picture>
+    </div>
+    <div class="wrap grid">
+      <div class="inset-body">
+        <h2 class="t-sub" id="invest-h">I've built the platforms. Now I'm building the business around them.</h2>
+        <div class="prose">
+          <p>I designed and built the Dot.Eco-system as one founder. I'm looking for investors and partners who want to help take it to market.</p>
+          <dl class="pitch">
+            <div><dt>The gap</dt><dd>Large operations pay for joined-up systems. Growing businesses make do with spreadsheets and WhatsApp groups, and their reporting is still stitched together by hand.</dd></div>
+            <div><dt>What exists</dt><dd>More than a dozen platforms, built and deployed, that I run myself. Every change to Dot.Mines passes more than a thousand automated tests, and a monitoring loop recommends fixes for a person to approve.</dd></div>
+            <div><dt>The first market</dt><dd>Growing, operations-heavy businesses whose numbers live in too many places.</dd></div>
+            <div><dt>Why me</dt><dd>I've worked where operational numbers are first recorded: in mining operations since 2019, and in mine control systems with Modular Mining at Anglo American operations since 2023. I'm also the full stack developer who builds the systems.</dd></div>
+            <div><dt>What I'm looking for</dt><dd>Investors and partners who can help take it to market. I don't publish forecasts. Write to me and we can talk under NDA.</dd></div>
+          </dl>
+        </div>
+        <a class="tlink" href="/contact/?subject=invest">Talk to me about investing or partnering<svg class="ic" aria-hidden="true"><use href="#i-next"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="close band close--sign" id="write" aria-labelledby="write-h">
+    <div class="hero-bg" aria-hidden="true">
+      <picture>
+        <source media="(max-width: 734px)" type="image/avif" srcset="/assets/night-sprawl-wide-800.avif 800w" sizes="100vw">
+        <source media="(max-width: 734px)" type="image/webp" srcset="/assets/night-sprawl-wide-800.webp 800w" sizes="100vw">
+        <source type="image/avif" srcset="/assets/night-sprawl-wide-1440.avif 1440w, /assets/night-sprawl-wide-1920.avif 1920w" sizes="100vw">
+        <source type="image/webp" srcset="/assets/night-sprawl-wide-1440.webp 1440w, /assets/night-sprawl-wide-1920.webp 1920w" sizes="100vw">
+        <img src="/assets/night-sprawl-wide-1440.webp" width="1440" height="720" alt="" decoding="async" loading="lazy">
+      </picture>
+    </div>
+    <div class="wrap">
+      <p class="note">Thank you for reading.</p>
+      <div class="signoff">
+        <picture><source type="image/avif" srcset="/assets/signature-880.avif"><img class="signoff__mark" src="/assets/signature-880.webp" width="880" height="224" alt="My signature" loading="lazy" decoding="async"></picture>
+        <p class="signoff__who">Sakhile Bhayi<span>Founder, Dot.Eco-system</span></p>
+      </div>
+      <div class="contact">
+        <div class="contact__intro">
+          <h2 class="t-section" id="write-h">Write to me</h2>
+          <p>If your reports take hours to assemble and still disagree, write to me.</p>
+          <p>I'm also glad to hear from founders building a product, from organisations putting AI to work, and from investors and partners.</p>
+          <p>You can also email <a href="mailto:info@sakhilebhayi.com">info@sakhilebhayi.com</a>.</p>
+          <ul class="profiles" role="list" aria-label="Profiles">
+            <li><a href="https://za.linkedin.com/in/sakhilebayi" rel="me noopener" target="_blank">LinkedIn<span class="sr-only"> (opens in a new tab)</span></a></li>
+          </ul>
+        </div>
+
+        <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" novalidate>
+          <input type="hidden" name="access_key" value="9d573292-9d41-4295-b09a-9b5e8a7b3173">
+          <input type="hidden" name="from_name" value="sakhilebhayi.com">
+          <div class="hp" aria-hidden="true">
+            <label for="f-botcheck">Leave this box unticked</label>
+            <input type="checkbox" name="botcheck" id="f-botcheck" tabindex="-1" autocomplete="off">
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="f-name">Name</label>
+              <input id="f-name" name="name" type="text" autocomplete="name" required>
+              <p class="field__err" id="f-name-err" hidden><svg aria-hidden="true"><use href="#i-err"/></svg><span>Please enter your name.</span></p>
             </div>
-            <div class="form-g">
-              <label class="form-lbl" for="cf-company">Organisation</label>
-              <input class="form-input" id="cf-company" name="company" type="text" placeholder="Your company or entity"/>
+            <div class="field">
+              <label for="f-email">Email</label>
+              <input id="f-email" name="email" type="email" autocomplete="email" inputmode="email" required>
+              <p class="field__err" id="f-email-err" hidden><svg aria-hidden="true"><use href="#i-err"/></svg><span>Please enter an email address I can reply to, like name@company.com.</span></p>
             </div>
-            <div class="form-g">
-              <label class="form-lbl" for="cf-objective">Subject</label>
-              <select class="form-select" id="cf-objective" name="objective">
-                <option>Fleet Intelligence Platform</option>
-                <option>Performance Analytics Dashboard</option>
-                <option>AI Decision Support</option>
-                <option>Industrial System Integration</option>
-                <option>Strategic Advisory</option>
-                <option>Other Inquiry</option>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="f-org">Organisation <span class="opt">(optional)</span></label>
+              <input id="f-org" name="organisation" type="text" autocomplete="organization">
+            </div>
+            <div class="field">
+              <label for="f-subject">Subject</label>
+              <select id="f-subject" name="subject" required>
+                <option value="" disabled selected>Choose a subject</option>
+                <option value="connect">Connecting my business's information</option>
+                <option value="founder">Product and technology strategy for a founder</option>
+                <option value="ai">Practical AI in my organisation</option>
+                <option value="invest">Investment or partnership</option>
+                <option value="dot">A question about the Dot.Eco-system or InfoDot</option>
+                <option value="press">Speaking or press</option>
+                <option value="other">Something else</option>
               </select>
+              <p class="field__err" id="f-subject-err" hidden><svg aria-hidden="true"><use href="#i-err"/></svg><span>Please choose a subject.</span></p>
             </div>
-            <div class="form-g">
-              <label class="form-lbl" for="cf-message">Message</label>
-              <textarea class="form-textarea" id="cf-message" name="message" rows="5" placeholder="Describe your project, challenge, or question..." required></textarea>
-            </div>
-            <div>
-              <button type="submit" class="form-submit" id="cf-submit">
-                <span id="cf-btn-text">Send Message</span>
-              </button>
-            </div>
-            <div class="form-ok" id="cf-success">Message received. Expect a response within 24 hours.</div>
-            <div class="form-err" id="cf-error"><span id="cf-error-msg">Something went wrong. Please try again or reach out via LinkedIn.</span></div>
-          </form>
-        </div>
-      </div>
-    </section>
-
-    <!-- Donate -->
-    <section id="donate">
-      <div class="wrap" style="padding-top:72px;padding-bottom:72px;">
-        <div class="donate-inner">
-          <div class="donate-text">
-            <div class="s-label">Support the Work</div>
-            <h2 class="donate-h">Enjoyed the work?<br/>Buy me a coffee.</h2>
-            <p class="donate-p">If what I build has added value to you — whether it's a tool you use, an idea that shaped your thinking, or a platform that serves your team — a small contribution goes a long way toward keeping these projects alive and open.</p>
           </div>
-          <div class="donate-action">
-            <a href="https://paypal.me/sakhile888" target="_blank" rel="noreferrer" class="donate-btn">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2z"/>
-                <path d="M8 12h8M12 8v8"/>
-              </svg>
-              Donate via PayPal
-            </a>
-            <p class="donate-note">Processed securely through PayPal. No account required.</p>
+          <div class="field">
+            <label for="f-message">Message</label>
+            <p class="field__hint" id="f-message-hint">A few lines is enough: what your business does, and where the numbers don't add up.</p>
+            <textarea id="f-message" name="message" rows="6" required aria-describedby="f-message-hint" data-hint="f-message-hint"></textarea>
+            <p class="field__err" id="f-message-err" hidden><svg aria-hidden="true"><use href="#i-err"/></svg><span>Please write a short message.</span></p>
           </div>
-        </div>
+          <p class="form__fail" id="f-fail" role="alert" hidden><svg aria-hidden="true"><use href="#i-err"/></svg><span>Your message didn't send. Please try again, or email info@sakhilebhayi.com.</span></p>
+          <div class="form__foot">
+            <button class="pill" type="submit" id="f-submit">Send message</button>
+            <p class="status" id="f-status" role="status" aria-live="polite"></p>
+          </div>
+          <p class="privacy">I use what you send only to reply to you. It reaches my inbox through Web3Forms, the form service this site uses, and is never added to a mailing list.</p>
+        </form>
+        <p class="sent" id="f-sent" tabindex="-1" role="status" hidden><svg aria-hidden="true"><use href="#i-ok"/></svg><span>Thank you. Your message has reached me, and I'll reply to the email address you gave.</span></p>
       </div>
-    </section>
-
-  </main>
-
-  <!-- Footer -->
-  <footer>
-    <div class="foot-inner">
-      <div style="display:flex;align-items:center;gap:10px">
-        <img src="/logo.png" alt="Sakhile Bhayi" style="width:28px;height:28px;object-fit:contain;opacity:0.7"/>
-        <span class="foot-name">Sakhile Bhayi</span>
-      </div>
-      <span class="foot-copy">&copy; 2026 All rights reserved</span>
-      <nav class="foot-links">
-        <a href="https://za.linkedin.com/in/sakhilebayi" target="_blank" rel="noreferrer">LinkedIn</a>
-        <a href="https://github.com/sakhileb" target="_blank" rel="noreferrer">GitHub</a>
-        <a href="#contact">Contact</a>
-      </nav>
     </div>
-  </footer>
+  </section>
+</main>
 
-  <script>
-    // Mobile drawer
-    const menuOpen = document.getElementById('menu-open');
-    const drawerOverlay = document.getElementById('drawer-overlay');
-    const drawerClose = document.getElementById('drawer-close');
-    menuOpen.addEventListener('click', () => drawerOverlay.classList.add('open'));
-    drawerClose.addEventListener('click', () => drawerOverlay.classList.remove('open'));
-    drawerOverlay.addEventListener('click', e => { if (e.target === drawerOverlay) drawerOverlay.classList.remove('open'); });
-    drawerOverlay.querySelectorAll('a').forEach(a => a.addEventListener('click', () => drawerOverlay.classList.remove('open')));
-
-    // Active nav via IntersectionObserver
-    const navLinks = document.querySelectorAll('.nav-link');
-    const sections = ['home','capabilities','about','expertise','education','portfolio','profile','contact'];
-    function setActive(id) {
-      navLinks.forEach(l => l.classList.toggle('active', l.dataset.s === id));
-    }
-    const obs = new IntersectionObserver(entries => {
-      entries.forEach(e => { if (e.isIntersecting) setActive(e.target.id); });
-    }, { rootMargin: '-38% 0px -38% 0px', threshold: 0 });
-    sections.forEach(id => { const el = document.getElementById(id); if (el) obs.observe(el); });
-
-    // Contact form
-    (function() {
-      const form = document.getElementById('contact-form');
-      const btn  = document.getElementById('cf-submit');
-      const btnT = document.getElementById('cf-btn-text');
-      const ok   = document.getElementById('cf-success');
-      const err  = document.getElementById('cf-error');
-      const errM = document.getElementById('cf-error-msg');
-      form.addEventListener('submit', async e => {
-        e.preventDefault();
-        btn.disabled = true; btnT.textContent = 'Sending…';
-        ok.style.display = 'none'; err.style.display = 'none';
-        try {
-          const data = Object.fromEntries(new FormData(form));
-          const res = await fetch('https://api.web3forms.com/submit', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-            body: JSON.stringify(data)
-          });
-          const json = await res.json();
-          if (json.success) { ok.style.display = 'block'; form.reset(); }
-          else throw new Error(json.message || 'Submission failed');
-        } catch(ex) {
-          errM.textContent = ex.message || 'Something went wrong. Please try again.';
-          err.style.display = 'block';
-        } finally {
-          btn.disabled = false; btnT.textContent = 'Send Message';
-        }
-      });
-    })();
-  </script>
+<footer class="close band foot-band">
+  <div class="wrap foot">
+    <ul role="list">
+      <li>© 2026 Sakhile Bhayi</li>
+      <li>Where Field Meets Digital</li>
+    </ul>
+    <ul class="foot__line" role="list" aria-label="Site">
+      <li><a href="/work/">Work</a></li>
+      <li><a href="/approach/">Approach</a></li>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/contact/">Contact</a></li>
+      <li><a href="https://za.linkedin.com/in/sakhilebayi" rel="me noopener" target="_blank">LinkedIn<span class="sr-only"> (opens in a new tab)</span></a></li>
+    </ul>
+    <ul class="foot__line foot__platforms" role="list" aria-label="The Dot.Eco-system">
+      <li class="foot__label">Dot.Eco-system</li>
+      <li><a href="https://www.infodot.co.za/" target="_blank" rel="noopener">InfoDot<span class="sr-only"> (opens in a new tab)</span></a></li>
+      <li><a href="https://mines.infodot.co.za/" target="_blank" rel="noopener">Dot.Mines<span class="sr-only"> (opens in a new tab)</span></a></li>
+      <li><a href="https://central.infodot.co.za/" target="_blank" rel="noopener">Dot.Central<span class="sr-only"> (opens in a new tab)</span></a></li>
+      <li><a href="https://doc.infodot.co.za/" target="_blank" rel="noopener">Dot.Doc<span class="sr-only"> (opens in a new tab)</span></a></li>
+      <li><a href="https://agents.infodot.co.za/" target="_blank" rel="noopener">Dot.Agents<span class="sr-only"> (opens in a new tab)</span></a></li>
+      <li><a href="https://forms.infodot.co.za/" target="_blank" rel="noopener">Dot.Forms<span class="sr-only"> (opens in a new tab)</span></a></li>
+      <li><a href="https://files.infodot.co.za/" target="_blank" rel="noopener">Dot.Files<span class="sr-only"> (opens in a new tab)</span></a></li>
+      <li><a href="https://engage.infodot.co.za/" target="_blank" rel="noopener">Dot.Engage<span class="sr-only"> (opens in a new tab)</span></a></li>
+      <li><a href="https://memory.infodot.co.za/" target="_blank" rel="noopener">Dot.Memory<span class="sr-only"> (opens in a new tab)</span></a></li>
+      <li><a href="https://analytics.infodot.co.za/" target="_blank" rel="noopener">Dot.Analytics<span class="sr-only"> (opens in a new tab)</span></a></li>
+      <li><a href="/work/">All platforms</a></li>
+    </ul>
+  </div>
+</footer>
 </body>
 </html>

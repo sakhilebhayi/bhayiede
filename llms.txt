@@ -1,0 +1,40 @@
+# Sakhile Bhayi
+
+> Sakhile Bhayi is a South African mine control systems engineer and full stack developer turned founder of the Dot.Eco-system, the full set of InfoDot micro platforms. He builds systems that connect a growing business's scattered information into one picture its people can trust.
+
+## This site
+- [Home](https://sakhilebhayi.com/): who Sakhile Bhayi is and what he builds
+- [Work](https://sakhilebhayi.com/work/): every Dot.Eco-system platform, and how far each has got
+- [Approach](https://sakhilebhayi.com/approach/): how he connects a business's information, and the work he offers
+- [About](https://sakhilebhayi.com/about/): background, career and short and full biographies
+- [Contact](https://sakhilebhayi.com/contact/): write to him, including about investing or partnering
+
+## The Dot.Eco-system
+- [InfoDot](https://www.infodot.co.za/): InfoDot exists to help people start, operate, manage, and grow successful businesses by combining collective human experience, practical knowledge, AI-assisted guidance, and business intelligence from across the Dot.Eco-system.
+- [Dot.Mines](https://mines.infodot.co.za/): Fleet and mine-operations platform: one view of machines, production, fuel, maintenance and operator compliance.
+- [Dot.Central](https://central.infodot.co.za/): A control-room system for a mining shift.
+- [Dot.Doc](https://doc.infodot.co.za/): Recurring reports written from shared templates.
+- [Dot.Agents](https://agents.infodot.co.za/): A governed AI-agent platform: every agent decision is logged and anything risky waits for a person to approve it.
+- [Dot.Forms](https://forms.infodot.co.za/): A form builder for teams.
+- [Dot.Files](https://files.infodot.co.za/): One folder tree for a whole team.
+- [Dot.Engage](https://engage.infodot.co.za/): Share, discuss and sign contracts.
+- [Dot.Press](https://pres.infodot.co.za/): Presentations that look designed.
+- [Dot.Dopemine](https://dopemine.infodot.co.za/): Engagement mechanics for the Dot.Eco-system.
+- [Dot.Memory](https://memory.infodot.co.za/): The memory of past incidents and their outcomes across the Dot.Eco-system.
+- [Dot.Analytics](https://analytics.infodot.co.za/): Analytics that show the source behind every insight.
+- [Dot.Charts](https://charts.infodot.co.za/): Chart analysis.
+- [Dot.Sheet](https://sheets.infodot.co.za/): Spreadsheets for teams.
+- [Dot.Tasks](https://tasks.infodot.co.za/): Task breakdown and a kanban board.
+- [Dot.Notify](https://notify.infodot.co.za/): Notifications across the Dot.Eco-system.
+- [Dot.Billing](https://billing.infodot.co.za/): Plans, invoices and usage.
+- [Dot.Projects](https://projects.infodot.co.za/): Project and programme delivery.
+- [Dot.Auction](https://auction.infodot.co.za/): Live bidding.
+- [Dot.Emall](https://emall.infodot.co.za/): A marketplace: open a store, shop every store.
+- [Dot.Ehail](https://ehail.infodot.co.za/): Run an e-hailing business.
+- [Dot.Pulse](https://pulse.infodot.co.za/): A community feed.
+- [Dot.Design](https://design.infodot.co.za/): Visual creation.
+- [Dot.Finance](https://finance.infodot.co.za/): One ledger for accounts, transactions and budgets.
+- [Dot.Tutor](https://tutor.infodot.co.za/): Book a tutor.
+- [Dot.Farms](https://farms.infodot.co.za/): Agriculture planning.
+- [Dot.HR](https://hr.infodot.co.za/): Positions, employee records and leave.
+- [Dot.Plug](https://plug.infodot.co.za/): A developer portal.
