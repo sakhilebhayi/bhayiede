@@ -17,7 +17,7 @@ There is no build step, no framework and no package manager. There are five stat
 | `/contact/` | `contact/index.html` | Write to me (night: who writes, form, what happens next) · FAQ (grey) |
 | 404 | `404.html` | A single band with links to `/` and `/work/` |
 
-Every page has the same nav (Work · Approach · About · Contact, with `aria-current="page"` on the current page) and the same footer. Every page except `/contact/` ends in the Close, which carries the full contact form. The header, the form and the footer are copied by hand into each page: if you change one, change all five and check that they still match.
+Every page has the same nav (Work · Approach · About · Contact, with `aria-current="page"` on the current page; on phones the bottom dock also has a Home tab with a house icon between Approach and About, hidden on wide screens where the name in the top bar already links home) and the same footer. Every page except `/contact/` ends in the Close, which carries the full contact form. The header, the form and the footer are copied by hand into each page: if you change one, change all five and check that they still match.
 
 Text links can choose the form subject: `/contact/?subject=connect|founder|ai|invest|dot|press|other`.
 
