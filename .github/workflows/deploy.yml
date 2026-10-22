@@ -1,0 +1,136 @@
+name: Check and deploy site
+
+# Pull requests: run the site checks only.
+# Pushes to main: check, back up the live files on the server, upload with rsync over SSH, then smoke-test the live site.
+# Manual run (Actions tab -> "Check and deploy site" -> Run workflow): deploys main again, or restores a backup
+# when you type a backup name (or "latest") in the rollback box.
+on:
+  pull_request:
+  push:
+    branches: [main]
+    paths-ignore: ['README.md', 'LICENSE', '.gitignore', '.vscode/**']
+  workflow_dispatch:
+    inputs:
+      rollback:
+        description: 'Restore a server backup instead of deploying: a file name from ~/site-backups, or "latest"'
+        required: false
+        default: ''
+
+concurrency:
+  group: site-deploy
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    name: Site checks
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check pages, links, structured data and wording
+        run: python3 scripts/check-site.py
+
+  deploy:
+    name: Deploy to sakhilebhayi.com
+    needs: check
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    environment: production
+    env:
+      DEPLOY_HOST: ${{ secrets.DEPLOY_HOST }}
+      DEPLOY_USER: ${{ secrets.DEPLOY_USER }}
+      DEPLOY_PATH: ${{ secrets.DEPLOY_PATH }}
+      DEPLOY_PORT: ${{ secrets.DEPLOY_PORT }}
+      DEPLOY_SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
+      DEPLOY_KNOWN_HOSTS: ${{ secrets.DEPLOY_KNOWN_HOSTS }}
+      ROLLBACK: ${{ github.event.inputs.rollback }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check the deploy secrets exist
+        id: cfg
+        run: |
+          missing=""
+          for v in DEPLOY_HOST DEPLOY_USER DEPLOY_PATH DEPLOY_SSH_KEY DEPLOY_KNOWN_HOSTS; do
+            [ -n "${!v}" ] || missing="$missing $v"
+          done
+          if [ -n "$missing" ]; then
+            echo "::warning::Deploy skipped. Missing repository secrets:$missing"
+            echo "### Deploy skipped" >> "$GITHUB_STEP_SUMMARY"
+            echo "Missing secrets:$missing" >> "$GITHUB_STEP_SUMMARY"
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Set up SSH
+        if: steps.cfg.outputs.ready == 'true'
+        run: |
+          mkdir -p ~/.ssh && chmod 700 ~/.ssh
+          printf '%s\n' "$DEPLOY_SSH_KEY" > ~/.ssh/deploy_key && chmod 600 ~/.ssh/deploy_key
+          printf '%s\n' "$DEPLOY_KNOWN_HOSTS" > ~/.ssh/known_hosts
+          cat > ~/.ssh/config <<EOF
+          Host deploy
+            HostName $DEPLOY_HOST
+            User $DEPLOY_USER
+            Port ${DEPLOY_PORT:-22}
+            IdentityFile ~/.ssh/deploy_key
+            IdentitiesOnly yes
+            StrictHostKeyChecking yes
+          EOF
+
+      - name: Restore a backup (manual rollback)
+        if: steps.cfg.outputs.ready == 'true' && env.ROLLBACK != ''
+        run: |
+          case "$ROLLBACK" in *[!A-Za-z0-9._-]*) echo "::error::Backup name may only contain letters, digits, dot, dash and underscore"; exit 1;; esac
+          ssh deploy "set -e; cd '$DEPLOY_PATH'; B='$ROLLBACK'; \
+            if [ \"\$B\" = latest ]; then B=\$(ls -1t ../site-backups/*.tgz | head -n 1); else B=\"../site-backups/\$B\"; fi; \
+            test -f \"\$B\"; echo \"Restoring \$B\"; tar xzf \"\$B\" -C ."
+          echo "### Restored backup \`$ROLLBACK\`" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Stage the files the site needs
+        if: steps.cfg.outputs.ready == 'true' && env.ROLLBACK == ''
+        run: |
+          mkdir _site
+          cp -R index.html 404.html site.css site.js .htaccess llms.txt robots.txt sitemap.xml logo.png og-image.png \
+                favicon-32.png apple-touch-icon.png work about approach contact assets logos _site/
+
+      - name: Back up the live files
+        if: steps.cfg.outputs.ready == 'true' && env.ROLLBACK == ''
+        run: |
+          ssh deploy "set -e; cd '$DEPLOY_PATH'; mkdir -p ../site-backups; \
+            tar czf ../site-backups/pre-${GITHUB_SHA::7}-\$(date +%Y%m%d-%H%M%S).tgz --ignore-failed-read \
+              index.html 404.html site.css site.js .htaccess llms.txt robots.txt sitemap.xml logo.png og-image.png \
+              favicon-32.png apple-touch-icon.png work about approach contact assets logos || test \$? -le 1; \
+            ls -1t ../site-backups/*.tgz | tail -n +11 | xargs -r rm -f; ls -1t ../site-backups | head -n 3"
+
+      - name: Upload with rsync
+        if: steps.cfg.outputs.ready == 'true' && env.ROLLBACK == ''
+        run: |
+          OPTS="-rlptz --chmod=D755,F644 -e ssh"
+          # folders the site owns are mirrored (stale files in them are removed)
+          for d in work about approach contact assets logos; do
+            rsync $OPTS --delete "_site/$d/" "deploy:$DEPLOY_PATH/$d/"
+          done
+          # single files are replaced; nothing else in the web root is touched
+          for f in index.html 404.html site.css site.js .htaccess llms.txt robots.txt sitemap.xml logo.png og-image.png favicon-32.png apple-touch-icon.png; do
+            rsync $OPTS "_site/$f" "deploy:$DEPLOY_PATH/$f"
+          done
+
+      - name: Smoke-test the live site
+        if: steps.cfg.outputs.ready == 'true' && env.ROLLBACK == ''
+        run: |
+          for i in 1 2 3; do
+            if bash scripts/smoke.sh https://sakhilebhayi.com; then exit 0; fi
+            echo "Smoke test failed (attempt $i), waiting before retrying"; sleep 15
+          done
+          echo "::error::The live site failed its smoke test. Run this workflow with rollback = latest to restore the previous files."
+          exit 1
+
+      - name: Summary
+        if: steps.cfg.outputs.ready == 'true'
+        run: echo "### Deployed ${GITHUB_SHA::7} to sakhilebhayi.com" >> "$GITHUB_STEP_SUMMARY"

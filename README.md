@@ -57,6 +57,14 @@ python3 -m http.server 8000
 
 Then open <http://localhost:8000>. The contact form posts to Web3Forms from localhost too, so any test message you send is a real one. `python3 -m http.server` doesn't run `.htaccess`, so it won't show the 404 page or the redirects.
 
+## Automatic deploy (GitHub Actions)
+
+`.github/workflows/deploy.yml` runs on every pull request (site checks only) and on every push to `main`: checks, a backup of the live files into `~/site-backups/` on the server (the last ten are kept), an rsync over SSH into `public_html/`, then a smoke test of the live site (`scripts/smoke.sh`). Run it by hand from the Actions tab to redeploy, or type a backup name (or `latest`) in the **rollback** box to restore one.
+
+It needs these repository secrets (Settings -> Secrets and variables -> Actions): `DEPLOY_HOST`, `DEPLOY_USER`, `DEPLOY_PATH` (for example `/home/<cpanel-user>/public_html`), `DEPLOY_SSH_KEY` (private key), `DEPLOY_KNOWN_HOSTS`, and optionally `DEPLOY_PORT`. Without them the deploy job skips with a warning and changes nothing. The matching public key must be authorised in cPanel (SSH Access).
+
+Run the same checks locally with `python3 scripts/check-site.py`. The manual steps below are the fallback.
+
 ## Deploy (cPanel / LiteSpeed)
 
 The host is cPanel on LiteSpeed, and `.htaccess` uses Apache-compatible rules. Upload into `public_html/` at the root, keeping the folder structure.
