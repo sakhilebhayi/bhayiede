@@ -39,7 +39,7 @@
   color-scheme:light;
 }
 @media (max-width:1068px){ :root{ --pad:128px; --pad-photo:96px; } }
-@media (max-width:734px){ :root{ --pad:96px; --pad-photo:72px; } }
+@media (max-width:734px){ :root{ --pad:96px; --pad-photo:72px; --nav:0px; } }
 
 /* ---------- Base ---------- */
 *,*::before,*::after{ box-sizing:border-box; }
@@ -893,6 +893,9 @@ html,body{ overflow-x:clip; }
 
 @media (max-width:734px){
   html{ scroll-padding-bottom:104px; }
+  /* The tab bar is at the bottom on phones and carries Home, so the top bar with the name is not shown.
+     --nav is 0px here (see :root above), so the first screen, the sticky offsets and scroll-padding follow. */
+  .nav{ display:none; }
   .dock{
     left:0; right:0; margin-inline:auto; width:min(calc(100% - 24px), 420px);
     bottom:calc(12px + env(safe-area-inset-bottom, 0px)); height:64px; padding:6px;
